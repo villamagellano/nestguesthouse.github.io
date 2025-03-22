@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villa Magellano - Bed & Breakfast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="robots" content="index, follow">
+    <title>Villa Magellano - Home</title>
+    <meta name="description" content="Benvenuti a Villa Magellano, il tuo Bed & Breakfast a Castelnuovo del Garda.">
+    <meta property="og:title" content="Villa Magellano - Home">
+    <meta property="og:description" content="Scopri il nostro B&B a Castelnuovo del Garda.">
+    <meta name="keywords" content="B&B, Villa Magellano, Castelnuovo del Garda, Italy">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it">
+    <meta property="og:site_name" content="Villa Magellano">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://example.com/it/home">
+    <meta property="twitter:title" content="Villa Magellano - Home">
+    <meta property="twitter:description" content="Scopri il nostro B&B a Castelnuovo del Garda.">
+    <meta property="twitter:image" content="">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #FFF8E1; /* Light warm yellow */
@@ -63,6 +85,10 @@
             object-fit: cover;
             border-radius: 10px;
             border: 2px solid #81D4FA; /* Light blue border */
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
         }
         footer {
             background-color: #FFCA28; /* Bright yellow */
@@ -94,31 +120,30 @@
 
         <!-- Top Sections -->
         <div class="top-sections">
-            <a href="rooms.html">Rooms</a>
-            <a href="availability.html">Availability</a>
-            <a href="about.html">About Us</a>
+            <a href="/it/camere">Camere</a>
+            <a href="/it/disponibilita">Disponibilità</a>
+            <a href="/it/su-di-noi">Su di Noi</a>
         </div>
 
         <!-- Photo Gallery -->
         <section class="photo-gallery">
-            <h2>Our Property</h2>
+            <h2>La Nostra Proprietà</h2>
             <div class="gallery">
-                <!-- Replace these with your actual photo URLs or file paths -->
-                <img src="https://via.placeholder.com/300x200.png?text=Front+View" alt="Front View">
-                <img src="https://via.placeholder.com/300x200.png?text=Room" alt="Room">
-                <img src="https://via.placeholder.com/300x200.png?text=Garden" alt="Garden">
-                <img src="https://via.placeholder.com/300x200.png?text=Interior" alt="Interior">
+                <img src="https://via.placeholder.com/300x200.png?text=Esterno+Villa" alt="Esterno Villa">
+                <img src="https://via.placeholder.com/300x200.png?text=Camera" alt="Camera">
+                <img src="https://via.placeholder.com/300x200.png?text=Giardino" alt="Giardino">
+                <img src="https://via.placeholder.com/300x200.png?text=Interno" alt="Interno">
             </div>
         </section>
 
         <!-- Footer with Address and Contact -->
         <footer>
-            <h3>Contact Us</h3>
-            <p>Via Belvedere, 10, Castelnuovo del Garda, Verona (VR), Italy</p>
-            <p>Alessandro (IT, ENG): <a href="tel:+393450233733">+39 3450233733</a></p>
-            <p>Jenny (DE, GR, IT, ENG): <a href="tel:+306974565068">+30 6974565068</a></p>
+            <h3>Contattaci</h3>
+            <p>Via Belvedere, 10, Castelnuovo del Garda, Verona (VR), Italia</p>
+            <p>Alessandro (IT, ENG): <a href="tel:+390000000000">+39 000 000 0000</a></p>
+            <p>Jenny (DE, GR, IT, ENG): <a href="tel:+300000000000">+30 000 000 0000</a></p>
             <p>Email: <a href="mailto:info@villamagellano.com">info@villamagellano.com</a></p>
-            <p>© 2025 Villa Magellano. All rights reserved.</p>
+            <p>© 2025 Villa Magellano. Tutti i diritti riservati.</p>
         </footer>
     </div>
 </body>
