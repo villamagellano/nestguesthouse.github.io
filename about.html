@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Yours Trulli</title>
+  <meta name="description" content="Learn about our story and the authentic Puglia experience at Yours Trulli" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            trulli: {
+              100: 'hsl(36, 33%, 98%)',
+              200: 'hsl(36, 8%, 88%)',
+              500: 'hsl(33, 3%, 40%)',
+              900: 'hsl(33, 3%, 19%)',
+            }
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: hsl(33, 3%, 19%);
+      background-color: hsl(36, 33%, 98%);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      letter-spacing: -0.025em;
+    }
+    .hover-lift {
+      transition: transform 0.35s ease-out;
+    }
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white py-4 sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-serif">Yours Trulli</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-trulli-900 hover:text-trulli-500">Home</a>
+        <a href="about.html" class="text-trulli-900 hover:text-trulli-500 font-medium">About</a>
+        <a href="gallery.html" class="text-trulli-900 hover:text-trulli-500">Gallery</a>
+        <a href="#contact" class="text-trulli-900 hover:text-trulli-500">Contact</a>
+      </div>
+      <button class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- About Header -->
+  <div class="pt-32 pb-16 bg-trulli-100">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <span class="inline-block px-3 py-1 text-xs tracking-wider uppercase bg-trulli-200 text-trulli-500 mb-6">
+          Our Story
+        </span>
+        <h1 class="text-4xl md:text-5xl font-serif mb-6 leading-tight">
+          About Yours Trulli
+        </h1>
+        <p class="text-lg text-trulli-500 leading-relaxed">
+          Discover the history, passion, and vision behind our authentic Pugliese retreat. From ancient stones to modern comfort, learn how we're preserving tradition while creating unforgettable experiences.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Story Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-3xl md:text-4xl font-serif mb-6">Our Journey</h2>
+          <p class="text-trulli-500 mb-6 leading-relaxed">
+            The story of Yours Trulli began in 2010 when Maria and Antonio Rossi, enchanted by the distinctive beauty of trulli architecture, purchased a cluster of abandoned trulli houses nestled in the countryside near Alberobello.
+          </p>
+          <p class="text-trulli-500 mb-6 leading-relaxed">
+            Having grown up in Puglia, the couple had a deep connection to the region's cultural heritage. They envisioned bringing these historic structures back to life while preserving their authenticity and sharing the magic of trulli living with travelers from around the world.
+          </p>
+          <p class="text-trulli-500 leading-relaxed">
+            After three years of careful restoration, working with local artisans who understood the traditional building techniques, Yours Trulli welcomed its first guests in 2013. Today, our property stands as a testament to the perfect harmony between historical preservation and contemporary comfort.
+          </p>
+        </div>
+        <div class="order-1 md:order-2">
+          <img 
+            src="https://images.unsplash.com/photo-1590059300073-c1ea20ae0a5a?q=80&w=2874&auto=format&fit=crop" 
+            alt="Traditional trulli houses" 
+            class="rounded-lg shadow-xl w-full h-auto"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="py-20 bg-trulli-100">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6">Our Values</h2>
+        <p class="text-trulli-500">
+          Every aspect of Yours Trulli is guided by our commitment to these core principles
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Value 1 -->
+        <div class="bg-white p-8 rounded-lg shadow-sm hover-lift">
+          <div class="w-12 h-12 flex items-center justify-center bg-trulli-200 rounded-full mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+          </div>
+          <h3 class="text-xl font-medium mb-4">Authentic Experience</h3>
+          <p class="text-trulli-500">
+            We are committed to providing an immersive experience that reflects the true essence of Pugliese culture, history, and lifestyle, from architecture to cuisine.
+          </p>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="bg-white p-8 rounded-lg shadow-sm hover-lift">
+          <div class="w-12 h-12 flex items-center justify-center bg-trulli-200 rounded-full mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900"><path d="M3 6c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v0Z"/><path d="M3 13c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v0Z"/><path d="M10 18a2 2 0 0 1 4 0"/><path d="M15 20a2 2 0 1 0 4 0 2 2 0 1 0-4 0"/><path d="M7 20a2 2 0 1 0-2 2"/></svg>
+          </div>
+          <h3 class="text-xl font-medium mb-4">Sustainable Hospitality</h3>
+          <p class="text-trulli-500">
+            We honor our environment through sustainable practices, supporting local producers, reducing waste, and minimizing our ecological footprint while maximizing guest comfort.
+          </p>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="bg-white p-8 rounded-lg shadow-sm hover-lift">
+          <div class="w-12 h-12 flex items-center justify-center bg-trulli-200 rounded-full mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="text-xl font-medium mb-4">Community Connection</h3>
+          <p class="text-trulli-500">
+            We are deeply rooted in the local community, partnering with artisans, farmers, and local businesses to offer our guests authentic experiences while supporting the regional economy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6">Meet Our Team</h2>
+        <p class="text-trulli-500">
+          The passionate individuals who make the Yours Trulli experience unforgettable
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Team Member 1 -->
+        <div class="text-center">
+          <div class="mb-6 overflow-hidden rounded-full w-48 h-48 mx-auto">
+            <img 
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop"
+              alt="Maria Rossi" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="text-xl font-medium mb-2">Maria Rossi</h3>
+          <p class="text-trulli-500 mb-4">Founder & Host</p>
+          <p class="text-trulli-500 max-w-xs mx-auto">
+            Born and raised in Puglia, Maria is passionate about sharing the region's rich cultural heritage with guests.
+          </p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="text-center">
+          <div class="mb-6 overflow-hidden rounded-full w-48 h-48 mx-auto">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+              alt="Antonio Rossi" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="text-xl font-medium mb-2">Antonio Rossi</h3>
+          <p class="text-trulli-500 mb-4">Founder & Restoration Expert</p>
+          <p class="text-trulli-500 max-w-xs mx-auto">
+            With a background in architecture, Antonio leads all restoration projects with meticulous attention to historical accuracy.
+          </p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="text-center">
+          <div class="mb-6 overflow-hidden rounded-full w-48 h-48 mx-auto">
+            <img 
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+              alt="Lucia Bianchi" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="text-xl font-medium mb-2">Lucia Bianchi</h3>
+          <p class="text-trulli-500 mb-4">Experience Coordinator</p>
+          <p class="text-trulli-500 max-w-xs mx-auto">
+            Lucia creates personalized itineraries and experiences that connect guests with local artisans, chefs, and hidden gems of Puglia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-trulli-100">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6">What Our Guests Say</h2>
+        <p class="text-trulli-500">
+          Words from those who have experienced the magic of Yours Trulli
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="flex mb-6">
+            <div class="text-yellow-400 flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+          <blockquote class="text-trulli-500 italic mb-6">
+            "Our stay at Yours Trulli was nothing short of magical. The attention to detail in preserving the authentic character of the trulli while providing modern comforts made for a unique experience. Maria and Antonio were exceptional hosts, sharing their deep knowledge of the region and arranging unforgettable local experiences for us."
+          </blockquote>
+          <div class="flex items-center">
+            <div class="mr-4">
+              <p class="font-medium">Emily & James</p>
+              <p class="text-sm text-trulli-500">London, UK</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="flex mb-6">
+            <div class="text-yellow-400 flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+          <blockquote class="text-trulli-500 italic mb-6">
+            "We chose Yours Trulli to celebrate our anniversary, and it exceeded all expectations. The trullo was beautifully restored, blending historical architecture with luxurious amenities. The cooking class arranged by Lucia introduced us to traditional Pugliese cuisine, and the private dinner under the stars among the olive trees was simply unforgettable."
+          </blockquote>
+          <div class="flex items-center">
+            <div class="mr-4">
+              <p class="font-medium">Sophie & Thomas</p>
+              <p class="text-sm text-trulli-500">Montreal, Canada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 md:py-28 relative">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1606046604972-77cc76aee944?q=80&w=2832&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+    <div class="absolute inset-0 bg-trulli-900/70"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="max-w-3xl mx-auto text-center text-white">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
+          Experience the Authentic Puglia
+        </h2>
+        <p class="text-white/80 mb-10">
+          Reserve your stay in our exquisite trulli houses and immerse yourself in the enchanting culture, cuisine, and landscapes of Puglia.
+        </p>
+        <a 
+          href="#" 
+          class="inline-block py-3 px-8 bg-white text-trulli-900 font-medium hover:bg-white/90 transition-colors"
+        >
+          Book Your Stay
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-trulli-900 text-white">
+    <div class="container mx-auto px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-serif mb-4">Yours Trulli</h3>
+          <p class="text-white/70 mb-6">Experience the magic of authentic Puglia in our meticulously restored trulli houses.</p>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-medium mb-4">Contact</h4>
+          <address class="text-white/70 not-italic">
+            <p class="mb-2">Via delle Trulli, 42</p>
+            <p class="mb-2">70011 Alberobello, Puglia</p>
+            <p class="mb-2">Italy</p>
+            <p class="mb-2">+39 123 456 7890</p>
+            <p>info@yourstrulli.com</p>
+          </address>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-medium mb-4">Links</h4>
+          <ul class="space-y-2 text-white/70">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Book Now</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-medium mb-4">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white/70 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="text-white/70 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="text-white/70 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-white/70 text-sm">&copy; 2023 Yours Trulli. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-white/70 text-sm hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="text-white/70 text-sm hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Required script -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+</html>
