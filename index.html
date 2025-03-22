@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,39 +54,43 @@
 <body>
   <!-- Navbar -->
   <nav class="bg-white py-4 sticky top-0 z-50 shadow-sm">
-    <div class="container mx-auto px-6 flex justify-between items-center">
-      <a href="#" class="text-2xl font-serif">Villa Magellano</a>
-      <div class="hidden md:flex space-x-8">
-        <a href="about.html" class="text-trulli-900 hover:text-trulli-500">About us</a>
-        <a href="rooms.html" class="text-trulli-900 hover:text-trulli-500">Rooms</a>
-        <a href="booking.html" class="text-trulli-900 hover:text-trulli-500">Book</a>
-        <a href="area.html" class="text-trulli-900 hover:text-trulli-500">Surroundings</a>
-       <a href="index_it.html" id="lang-switch"><img src="static/ita_logo.png" alt="ita Flag" class="w-4 h-4"></a>
-      </div>
-      <button class="md:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <a href="#" class="text-xl md:text-2xl font-serif">Villa Magellano</a>
+      <!-- Hamburger Button -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-trulli-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
+      <!-- Navigation Links -->
+      <div id="menu" class="hidden md:flex md:space-x-6 absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent px-4 md:px-0 py-4 md:py-0 flex-col md:flex-row items-center">
+        <a href="about.html" class="text-trulli-900 hover:text-trulli-500 py-2 md:py-0">About us</a>
+        <a href="rooms.html" class="text-trulli-900 hover:text-trulli-500 py-2 md:py-0">Rooms</a>
+        <a href="booking.html" class="text-trulli-900 hover:text-trulli-500 py-2 md:py-0">Book</a>
+        <a href="area.html" class="text-trulli-900 hover:text-trulli-500 py-2 md:py-0">Surroundings</a>
+        <a href="index_it.html" id="lang-switch" class="py-2 md:py-0">
+          <img src="static/ita_logo.png" alt="ITA Flag" class="w-4 h-4">
+        </a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="relative h-screen">
+  <header class="relative h-[70vh] md:h-screen">
     <div class="absolute inset-0">
-      <img src="static/view_pano.jpg" alt="My custom image" class="w-full h-full object-cover" />
+      <img src="static/view_pano.jpg" alt="Lake view" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     </div>
     <div class="relative h-full flex items-center">
-      <div class="container mx-auto px-6 py-20">
-        <div class="max-w-3xl">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl text-white font-serif mb-6 leading-tight">
-            Experience authentic Garda Lake in our luxurious villa
+      <div class="container mx-auto px-4 py-10 md:py-20 text-center md:text-left">
+        <div class="max-w-3xl mx-auto md:mx-0">
+          <h1 class="text-3xl md:text-4xl lg:text-6xl text-white font-serif mb-6 leading-tight">
+            Experience authentic Garda Lake
           </h1>
-          <p class="text-xl text-white text-opacity-90 mb-10">
-            Immerse yourself in the unique charm of traditional villa, reimagined with modern comfort and elegance.
+          <p class="text-lg md:text-xl text-white text-opacity-90 mb-8">
+            Modern comfort meets traditional charm in our luxurious villa.
           </p>
-          <a href="#book-now" class="inline-block py-3 px-8 bg-white text-trulli-900 font-medium hover:bg-opacity-90 transition-colors">
+          <a href="#book-now" class="inline-block py-3 px-6 bg-white text-trulli-900 font-medium hover:bg-opacity-90 transition-colors">
             Book Your Stay
           </a>
         </div>
@@ -96,63 +99,53 @@
   </header>
 
   <!-- Introduction -->
-  <section id="about" class="py-20 md:py-28">
-    <div class="container mx-auto px-6">
+  <section id="about" class="py-16 md:py-28">
+    <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <span class="inline-block px-3 py-1 text-xs tracking-wider uppercase bg-trulli-200 text-trulli-500 mb-6">Welcome to Yours Trulli</span>
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-6 leading-tight">
-          A unique blend of history, luxury, and natural beauty
+        <span class="inline-block px-3 py-1 text-xs tracking-wider uppercase bg-trulli-200 text-trulli-500 mb-6">Welcome</span>
+        <h2 class="text-2xl md:text-4xl font-serif mb-6 leading-tight">
+          History, luxury, and nature
         </h2>
-        <p class="text-lg text-trulli-500 mb-10 leading-relaxed">
-          Nestled in the enchanting countryside of the southern Garda Lake, our carefully restored trulli houses offer an extraordinary stay experience. 
-          Our Villa combines authentic architecture with contemporary comfort, creating the perfect backdrop for your Italian getaway.
+        <p class="text-base md:text-lg text-trulli-500 mb-8 leading-relaxed">
+          Nestled by Garda Lake, our restored villa offers a blend of authentic architecture and modern comfort for your Italian escape.
         </p>
         <a href="#" class="inline-flex items-center text-trulli-900 hover:text-trulli-500 transition-colors duration-250">
           <span class="mr-2 font-medium">Discover our story</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
     </div>
   </section>
-  
+
   <!-- Features -->
-  <section class="py-20 md:py-28">
-    <div class="container mx-auto px-6">
-      <div class="space-y-24 md:space-y-32">
+  <section class="py-16 md:py-28">
+    <div class="container mx-auto px-4">
+      <div class="space-y-16 md:space-y-32">
         <!-- Feature 1 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 items-center">
           <div class="h-full overflow-hidden">
-            <div class="aspect-[4/3] h-full w-full overflow-hidden">
-              <img
-                src="static/airbnb17.jpg"
-                alt="Authentic Trulli Experience"
-                class="object-cover w-full h-full hover-lift transform transition-transform duration-[1.8s] hover:scale-105"
-              />
+            <div class="aspect-[4/3] w-full overflow-hidden">
+              <img src="static/airbnb17.jpg" alt="Authentic Experience" class="object-cover w-full h-full hover-lift transform transition-transform duration-[1.8s] hover:scale-105" />
             </div>
           </div>
-          <div class="flex flex-col justify-center md:pl-12">
-            <h2 class="text-3xl md:text-4xl font-serif mb-6">Authentic Trulli Experience</h2>
-            <p class="text-trulli-500 leading-relaxed">
-              Our trulli houses are meticulously restored to preserve their authentic charm while incorporating modern amenities for your comfort. Experience the unique architecture and history of these UNESCO-protected dwellings that have defined the Puglia landscape for centuries.
+          <div class="flex flex-col justify-center">
+            <h2 class="text-2xl md:text-4xl font-serif mb-4">Authentic Experience</h2>
+            <p class="text-trulli-500 text-base md:text-lg leading-relaxed">
+              Restored with care, our villa preserves its charm while offering modern amenities.
             </p>
           </div>
         </div>
-
         <!-- Feature 2 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-          <div class="flex flex-col justify-center md:pr-12 md:order-first">
-            <h2 class="text-3xl md:text-4xl font-serif mb-6">Immersed in Nature</h2>
-            <p class="text-trulli-500 leading-relaxed">
-              Surrounded by ancient olive groves, vineyards, and the gentle rolling hills of the Valle d'Itria, our property offers an idyllic retreat into nature. Enjoy panoramic views, peaceful gardens, and the refreshing private pool that perfectly complements the Pugliese sun.
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 items-center">
+          <div class="flex flex-col justify-center">
+            <h2 class="text-2xl md:text-4xl font-serif mb-4">Immersed in Nature</h2>
+            <p class="text-trulli-500 text-base md:text-lg leading-relaxed">
+              Surrounded by olive groves and lake views, enjoy a serene retreat with a private pool.
             </p>
           </div>
-          <div class="h-full overflow-hidden md:order-last">
-            <div class="aspect-[4/3] h-full w-full overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1543465077-db45d34b88a5?q=80&w=2665&auto=format&fit=crop"
-                alt="Immersed in Nature"
-                class="object-cover w-full h-full hover-lift transform transition-transform duration-[1.8s] hover:scale-105"
-              />
+          <div class="h-full overflow-hidden">
+            <div class="aspect-[4/3] w-full overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1543465077-db45d34b88a5?q=80&w=2665&auto=format&fit=crop" alt="Nature" class="object-cover w-full h-full hover-lift transform transition-transform duration-[1.8s] hover:scale-105" />
             </div>
           </div>
         </div>
@@ -161,121 +154,75 @@
   </section>
 
   <!-- Gallery -->
-  <section id="gallery" class="py-20 md:py-28 bg-trulli-100">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-serif mb-4">Glimpses of Your Stay</h2>
-        <p class="text-trulli-500 max-w-2xl mx-auto">
-          Explore the beauty and comfort of our Trulli properties through these selected images
+  <section id="gallery" class="py-16 md:py-28 bg-trulli-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl md:text-4xl font-serif mb-4">Glimpses of Your Stay</h2>
+        <p class="text-trulli-500 text-base md:text-lg max-w-2xl mx-auto">
+          Discover the beauty and comfort of our villa.
         </p>
       </div>
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2670&auto=format&fit=crop" 
-               alt="Trullo interior with elegant furnishings" 
-               class="w-full h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" />
-        </div>
-        <div class="overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop" 
-               alt="Traditional trullo exterior" 
-               class="w-full h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" />
-        </div>
-        <div class="overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2670&auto=format&fit=crop" 
-               alt="Swimming pool with view" 
-               class="w-full h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" />
-        </div>
-        <div class="overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1614267157481-ca2b81ac6fcc?q=80&w=2670&auto=format&fit=crop" 
-               alt="Rustic dining area" 
-               class="w-full h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" />
-        </div>
-        <div class="overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2670&auto=format&fit=crop" 
-               alt="Bedroom with traditional elements" 
-               class="w-full h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" />
-        </div>
-        <div class="overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2667&auto=format&fit=crop" 
-               alt="Trullo garden with olive trees" 
-               class="w-full h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" />
-        </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="overflow-hidden"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2670&auto=format&fit=crop" alt="Interior" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
+        <div class="overflow-hidden"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop" alt="Exterior" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
+        <div class="overflow-hidden"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2670&auto=format&fit=crop" alt="Pool" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
+        <div class="overflow-hidden"><img src="https://images.unsplash.com/photo-1614267157481-ca2b81ac6fcc?q=80&w=2670&auto=format&fit=crop" alt="Dining" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
+        <div class="overflow-hidden"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2670&auto=format&fit=crop" alt="Bedroom" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
+        <div class="overflow-hidden"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2667&auto=format&fit=crop" alt="Garden" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section id="book-now" class="py-20 md:py-28 relative">
+  <section id="book-now" class="py-16 md:py-28 relative">
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1606046604972-77cc76aee944?q=80&w=2832&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
     <div class="absolute inset-0 bg-trulli-900/70"></div>
-    
-    <div class="container mx-auto px-6 relative z-10">
+    <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-3xl mx-auto text-center text-white">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
-          Begin Your Authentic Puglia Experience
-        </h2>
-        <p class="text-white/80 mb-10">
-          Reserve your stay in our exquisite trulli houses and immerse yourself in the enchanting culture, cuisine, and landscapes of Puglia.
-        </p>
-        <a 
-          href="#" 
-          class="inline-block py-3 px-8 bg-white text-trulli-900 font-medium hover:bg-white/90 transition-colors"
-        >
-          Book Your Stay
-        </a>
+        <h2 class="text-2xl md:text-4xl font-serif mb-6">Begin Your Garda Experience</h2>
+        <p class="text-white/80 text-base md:text-lg mb-8">Reserve your stay and dive into the culture and landscapes of Garda Lake.</p>
+        <a href="#" class="inline-block py-3 px-6 bg-white text-trulli-900 font-medium hover:bg-white/90 transition-colors">Book Your Stay</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer id="contact" class="bg-trulli-900 text-white">
-    <div class="container mx-auto px-6 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="container mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div>
-          <h3 class="text-2xl font-serif mb-4">Yours Trulli</h3>
-          <p class="text-white/70 mb-6">Experience the magic of authentic Puglia in our meticulously restored trulli houses.</p>
+          <h3 class="text-xl md:text-2xl font-serif mb-4">Villa Magellano</h3>
+          <p class="text-white/70 text-sm md:text-base mb-6">Experience the magic of Garda Lake in our luxurious villa.</p>
         </div>
-        
         <div>
-          <h4 class="text-lg font-medium mb-4">Contact</h4>
-          <address class="text-white/70 not-italic">
-            <p class="mb-2">Via delle Trulli, 42</p>
-            <p class="mb-2">70011 Alberobello, Puglia</p>
-            <p class="mb-2">Italy</p>
+          <h4 class="text-base md:text-lg font-medium mb-4">Contact</h4>
+          <address class="text-white/70 text-sm md:text-base not-italic">
+            <p class="mb-2">Via del Lago, 42</p>
+            <p class="mb-2">Garda Lake, Italy</p>
             <p class="mb-2">+39 123 456 7890</p>
-            <p>info@yourstrulli.com</p>
+            <p>info@villamagellano.com</p>
           </address>
         </div>
-        
         <div>
-          <h4 class="text-lg font-medium mb-4">Links</h4>
-          <ul class="space-y-2 text-white/70">
+          <h4 class="text-base md:text-lg font-medium mb-4">Links</h4>
+          <ul class="space-y-2 text-white/70 text-sm md:text-base">
             <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
             <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
             <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
             <li><a href="#book-now" class="hover:text-white transition-colors">Book Now</a></li>
           </ul>
         </div>
-        
         <div>
-          <h4 class="text-lg font-medium mb-4">Follow Us</h4>
+          <h4 class="text-base md:text-lg font-medium mb-4">Follow Us</h4>
           <div class="flex space-x-4">
-            <a href="#" class="text-white/70 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-            </a>
-            <a href="#" class="text-white/70 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="#" class="text-white/70 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-            </a>
+            <a href="#" class="text-white/70 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            <a href="#" class="text-white/70 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="text-white/70 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
           </div>
         </div>
       </div>
-      
-      <div class="border-t border-white/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-white/70 text-sm">&copy; 2023 Yours Trulli. All rights reserved.</p>
+      <div class="border-t border-white/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-white/70 text-sm">© 2023 Villa Magellano. All rights reserved.</p>
         <div class="flex space-x-6 mt-4 md:mt-0">
           <a href="#" class="text-white/70 text-sm hover:text-white transition-colors">Privacy Policy</a>
           <a href="#" class="text-white/70 text-sm hover:text-white transition-colors">Terms of Service</a>
@@ -284,7 +231,12 @@
     </div>
   </footer>
 
-  <!-- Required script -->
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('menu').classList.toggle('hidden');
+    });
+  </script>
   <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
 </body>
 </html>
