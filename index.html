@@ -1,150 +1,992 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="robots" content="index, follow">
-    <title>Villa Magellano - Home</title>
-    <meta name="description" content="Benvenuti a Villa Magellano, il tuo Bed & Breakfast a Castelnuovo del Garda.">
-    <meta property="og:title" content="Villa Magellano - Home">
-    <meta property="og:description" content="Scopri il nostro B&B a Castelnuovo del Garda.">
-    <meta name="keywords" content="B&B, Villa Magellano, Castelnuovo del Garda, Italy">
-    <meta property="og:image" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="it">
-    <meta property="og:site_name" content="Villa Magellano">
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://example.com/it/home">
-    <meta property="twitter:title" content="Villa Magellano - Home">
-    <meta property="twitter:description" content="Scopri il nostro B&B a Castelnuovo del Garda.">
+<html lang="it"><head><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="> <meta charset="UTF-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="robots" content="index, folow"> <title>yours-trulli -  Home - Yours Trulli </title> <meta name="description" content="">  <meta property="og:title" content=""> <meta property="og:description" content=""> <meta name="keywords" content="">  <meta property="og:image" content=""> <meta property="og:type" content="website">  <meta property="og:locale" content="it">  <meta property="og:site_name" content="yours-trulli"> <meta property="twitter:card" content="summary"> <meta property="twitter:url" content="https://yours-trulli.com/it/home">
+    <meta property="twitter:title" content="Home">
+    <meta property="twitter:description" content="">
     <meta property="twitter:image" content="">
 
+
+    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FFF8E1; /* Light warm yellow */
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background-color: #FFCA28; /* Bright summer yellow */
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            color: #FFFFFF;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        .top-sections {
-            display: flex;
-            justify-content: space-around;
-            background-color: #FFAB91; /* Soft orange */
-            padding: 15px 0;
-        }
-        .top-sections a {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        .top-sections a:hover {
-            color: #81D4FA; /* Light blue hover */
-        }
-        .photo-gallery {
-            padding: 40px 0;
-            text-align: center;
-        }
-        .photo-gallery h2 {
-            color: #FF5722; /* Vibrant orange */
-            margin-bottom: 20px;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .gallery img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 2px solid #81D4FA; /* Light blue border */
-            transition: transform 0.3s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            background-color: #FFCA28; /* Bright yellow */
-            padding: 20px;
-            text-align: center;
-            color: #FFFFFF;
-        }
-        footer h3 {
-            margin: 0 0 10px;
-            color: #FF5722; /* Vibrant orange */
-        }
-        footer p {
-            margin: 5px 0;
-        }
-        footer a {
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-        footer a:hover {
-            color: #81D4FA; /* Light blue */
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Villa Magellano - Bed & Breakfast</h1>
-        </header>
+    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/bUO1BXI8H9PgjAPSW9hwuSeI/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-W6vGSa1gNU2JYZ4aYa4y4W3SgdiTlWqPltQiHH1/PEEh6w3sEdnuACkbWBJN1UBJ"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-CZJTVWBPQW&amp;l=dataLayer&amp;cx=c&amp;gtm=457e53k0h2za200&amp;tag_exp=102482433~102788824~102803279~102813109"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-142536724-1&amp;l=dataLayer&amp;cx=c&amp;gtm=457e53k0h2za200&amp;tag_exp=102482433~102788824~102803279~102813109"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-LYZJLZNPXZ&amp;l=dataLayer&amp;cx=c&amp;gtm=457e53k0h2za200&amp;tag_exp=102482433~102788824~102803279~102813109"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-        <!-- Top Sections -->
-        <div class="top-sections">
-            <a href="/it/camere">Camere</a>
-            <a href="/it/disponibilita">Disponibilità</a>
-            <a href="/it/su-di-noi">Su di Noi</a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.js" integrity="sha256-2tY/J95fqJ89bv1QWuh+j/0JqEcKXjiTMJF4+4SxVyQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js" integrity="sha256-HQCkPjsckBtmO60xeZs560g8/5v04DvOkyEo01zhSpo=" crossorigin="anonymous"></script>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-nl_NL.min.js"></script>
+
+
+<link rel="stylesheet" href="https://yours-trulli.com/assets/templates/css/vendor/waypoint-animations.css?v=1684880895" type="text/css" media="all">
+<script src="https://yours-trulli.com/assets/templates/js/vendor/waypoints.min.js?v=1684880895"></script>
+
+
+            <!-- BEGIN GENERATED CSS -->
+        <style type="text/css">
+            
+/* START WITH TEMPLATE 86 AND BLOCK 1*/
+ul.miniMenu { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; padding-top: 8px; }
+ul.miniMenu li { padding-right: 15px; letter-spacing: 0.03em; }
+ul.miniMenu li a { color: #fff; font-size: 14px; display: block; line-height: normal; }
+ul.miniMenu li a.is-active,
+ul.miniMenu li a:hover { color: #aeb8d6; }
+
+@media only screen and (max-width: 979px) {
+	ul.miniMenu li a { font-size: 13px; }
+}
+
+@media only screen and (max-width: 767px) {
+	ul.miniMenu li { padding-right: 10px; }
+}
+/* END OF TEMPLATE 86 AND BLOCK 1*/
+
+
+/* START WITH TEMPLATE 85 AND BLOCK 2*/
+ul.navMenu { overflow: hidden; width: auto; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; opacity: 0; }
+ul.navMenu li { margin: 0 15px; letter-spacing: 0.02em; }
+ul.navMenu li a { font-size: 18px; color: #000; line-height: normal; }
+ul.navMenu li a.is-active, ul.navMenu li a:hover { color: #afb9d6; }
+ul.navMenu li ul { display: none; }
+
+@media only screen and (max-width: 1199px) {
+ul.navMenu li a { font-size: 16px; }
+ul.navMenu li { margin: 0 10px; }
+}
+
+@media only screen and (max-width: 979px) {
+ul.navMenu li { margin: 0 8px; }
+ul.navMenu li a { font-size: 14px; }
+}
+
+@media only screen and (max-width: 767px) {
+ul.navMenu { display: initial; display: initial; display: initial; }
+}
+/* END OF TEMPLATE 85 AND BLOCK 2*/
+
+
+/* START WITH TEMPLATE 88 AND BLOCK 22*/
+.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent;}
+.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0;}
+.slick-list:focus{outline:none;}
+.slick-list.dragging{cursor:pointer;cursor:hand;}
+.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
+.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto;}
+.slick-track:before,.slick-track:after{display:table;content:'';}
+.slick-track:after{clear:both;}
+.slick-loading .slick-track{visibility:hidden;}
+.slick-slide{display:none;float:left;height:100%;min-height:1px;}
+[dir='rtl'] .slick-slide{float:right;}
+.slick-slide img{display:block;}
+.slick-slide.slick-loading img{display:none;}
+.slick-slide.dragging img{pointer-events:none;}
+.slick-initialized .slick-slide{display:block;}
+.slick-loading .slick-slide{visibility:hidden;}
+.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent;}
+.slick-arrow.slick-hidden{display:none;}
+
+.sliderBoxYT { position: relative; width: 100%; margin-top: 22px; opacity: 0; margin-bottom: 10px; }
+.sliderBoxYT:before { content: ''; position: absolute; left: 0; top: -10px; z-index: 1; width:100%; height: 16px; }
+.sliderBoxYT:after { content: ''; position: absolute; left: 0; bottom: -10px; z-index: 1; width:100%; height: 16px; }
+.sliderBoxYT .slick-prev,
+.sliderBoxYT .slick-next { text-indent: -9999px; cursor: pointer; top: 220px; position: absolute; height: 68px; width: 47px; z-index: 1; border: none; background-position: center; background-repeat: no-repeat; background-color: transparent; transition: all 0.3s; }
+.sliderBoxYT .slick-prev:hover,
+.sliderBoxYT .slick-next:hover { opacity: 0.8; }
+.sliderBoxYT .slick-prev { left: 178px; background-image: url('https://yours-trulli.com/images/prev-arrow.png'); }
+.sliderBoxYT .slick-next { right: 178px; background-image: url('https://yours-trulli.com/images/next-arrow.png'); }
+.sliderBoxYT .slide { border-left: 5px solid #fff; border-right: 5px solid #fff; background-repeat: no-repeat; background-size: cover; width: 1110px; position: relative; min-height: 495px; }
+.sliderBoxYT .text { min-height: 495px; width: 350px; border-left: #fff solid 10px; border-left: #fff solid 10px; padding: 39px 30px 50px; background: #000; text-align: center; transition: all 0.3s; position: absolute; right: 50%; top: 0; margin-right: -550px; }
+.sliderBoxYT .text h4 { font-weight: 300; font-size: 20px; line-height: 1.2; letter-spacing: 0.05em; text-transform: inherit; }
+.sliderBoxYT .text p { color: #fff; line-height: 1.9; padding: 15px 25px 0; margin: 0; font-size: 15px; }
+.sliderBoxYT .text .button { margin-top: 36px; font-weight: 600; }
+.sliderBoxYT .zoom-btn { width: calc(100% - 350px); height: 100%; position: absolute; left: 0; top: 0; z-index: 2; text-indent: -9999px; opacity: 0; transition: all 0.3s; visibility: hidden; display: block; }
+.sliderBoxYT .zoom-btn img { opacity: 0; max-width: 100%; }
+.sliderBoxYT .zoom-btn:after { content: ''; position: absolute; left: 11px; bottom: 6px; width: 46px; height: 46px; }
+.sliderBoxYT .slick-current .zoom-btn { opacity: 1; visibility: visible; }
+.sliderBoxYT .slick-current .text { opacity: 1; }
+.sliderBoxYT .zoom-btn:hover { opacity: 0.8; }
+
+@media only screen and (max-width: 1599px) {
+	.sliderBoxYT .slick-prev { left: 15px; }
+	.sliderBoxYT .slick-next { right: 15px; }
+}
+
+@media only screen and (max-width: 1279px) {
+	.sliderBoxYT .slick-prev { left: 0; }
+	.sliderBoxYT .slick-next { right: 0; }
+}
+
+@media only screen and (max-width: 1199px) {
+	.sliderBoxYT .slick-prev, .sliderBox .slick-next { background-size: 35px auto; width: 35px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+	.sliderBoxYT .slide { width: 850px; }
+	.sliderBoxYT .text p { padding: 15px 0 0; }
+	.sliderBoxYT .slide { min-height: 420px; }
+	.sliderBoxYT .text { padding: 40px 25px; margin-right: -420px; min-height: 420px; }
+	.sliderBoxYT .text .button { margin-top: 25px; }
+}
+
+@media only screen and (max-width: 979px) {
+	.sliderBoxYT .slide { width: 650px; min-height: 390px; }
+	.sliderBoxYT .text { min-height: 390px; margin-right: -320px; }
+	.sliderBoxYT .text p { line-height: 1.6; }
+}
+
+@media only screen and (max-width: 767px) {
+	.sliderBoxYT .slide { width: auto; }
+	.sliderBoxYT .zoom-btn { position: relative; opacity: 1; height: auto; visibility: visible; width: 100%; }
+	.sliderBoxYT .slick-prev, .sliderBox .slick-next { background-size: 15px; width: 15px; height: 50px; }
+	.sliderBoxYT .text { float: none; width: 100%; position: static; min-height: 10px; padding: 30px 35px; }
+	.sliderBoxYT .text h4 { font-size: 18px; }
+	.sliderBoxYT .zoom-btn:after { background-size: 29px; width: 30px; height: 30px; }
+	.sliderBoxYT .slide { min-height: 10px; background: none !important; width: 100%; border: 0; }
+	.sliderBoxYT .zoom-btn img { opacity: 1; }
+	.sliderBoxYT .text { margin: 0; border: 0; opacity: 1; }
+	.sliderBoxYT .slick-arrow { margin-top: 0; top: 50%; }
+	.sliderBoxYT .slick-prev { left: 10px; }
+	.sliderBoxYT .slick-next { right: 10px; }
+	.sliderBoxYT .slider { position: relative; }
+}
+/* END OF TEMPLATE 88 AND BLOCK 22*/
+
+
+/* START WITH TEMPLATE 58 AND BLOCK 17*/
+.aboutBox_1col_sub_title { padding-top: 100px; padding-bottom: 100px; background: #000000; opacity: 0; }
+.aboutBox_1col_sub_title .title { text-align: center; padding-bottom: 20px; }
+.aboutBox_1col_sub_title h3 { color: #fff; text-transform: uppercase; font-weight: 300; margin-bottom: 15px; font-size: 36px; }
+.aboutBox_1col_sub_title .contentDiv { margin-bottom: 20px; line-height: 26px; text-align: center; }
+.aboutBox_1col_sub_title p.highlighted { font-size: 30px; color: #ccc; text-align: center; }
+.aboutBox_1col_sub_title figure img { width: 100%; }
+
+@media only screen and (max-width: 1599px) {
+	.aboutBox_1col_sub_title { padding-top: 50px; padding-bottom: 50px; }
+}
+
+@media only screen and (max-width: 767px) {
+	.aboutBox_1col_sub_title h3 { font-size: 30px; }
+	.aboutBox_1col_sub_title p.highlighted { font-size: 20px; }
+}
+/* END OF TEMPLATE 58 AND BLOCK 17*/
+
+
+/* START WITH TEMPLATE 90 AND BLOCK 12*/
+.galleryBox { width: 100%; margin-bottom: 130px; opacity: 0; }
+			.galleryBox ul { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-justify-content: flex-start; -ms-flex-pack: justify; justify-content: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+			.galleryBox ul li { width: 25%; margin-bottom: 10px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; padding:  0 5px; }
+			.galleryBox ul li img { width: 100%; max-width: 100%; transition: all 0.5s; }
+			.galleryBox ul li a { display: block; width: 100%; overflow: hidden; position: relative; }
+			.galleryBox ul li a:hover img { -webkit-transform:scale(1.03); transform:scale(1.03); }
+
+@media only screen and (max-width: 1199px) {
+	.galleryBox { margin-bottom: 80px; }
+	.galleryBox { margin-bottom: 50px; }
+}
+
+@media only screen and (max-width: 767px) {
+	.galleryBox ul { margin: -5px; }
+	.galleryBox ul li { width: 50%; }
+	.galleryBox { padding-top: 30px; }
+}
+/* END OF TEMPLATE 90 AND BLOCK 12*/
+
+
+/* START WITH TEMPLATE 71 AND BLOCK 13*/
+.brandBox_1col_title_1btn { background: #000; padding-top: 100px; padding-bottom: 100px; text-align: center; opacity: 0; }
+.brandBox_1col_title_1btn h3 { color: #fff; font-weight: 300; margin-bottom: 15px; font-size: 36px; }
+.brandBox_1col_title_1btn h3 span { font-size: 30px; display: block; color: #ccc; }
+.brandBox_1col_title_1btn .contentDiv { margin-bottom: 25px; font-size: 16px; }
+.brandBox_1col_title_1btn .btn { display: inline-block; border: 1px solid #666766; padding: 5px 20px; color: #fff; text-align: center; border-radius: 0; font-size: 22px; font-weight: 300; white-space: normal; margin: 0 10px; }
+.brandBox_1col_title_1btn .btn:hover { background: #fff; color: #000; }
+/* END OF TEMPLATE 71 AND BLOCK 13*/
+
+
+/* START WITH TEMPLATE 128 AND BLOCK 121*/
+.socialBox_title_sm { position: relative; opacity: 0; }
+.socialBox_title_sm .title { padding-top: 50px; padding-bottom: 50px; text-align: center; max-width: 560px; margin: 0 auto; }
+.socialBox_title_sm h1 { font-size: 36px; font-weight: 300; margin-bottom: 15px; color: #ccc; text-transform: uppercase; }
+.socialBox_title_sm h4 { font-size: 30px; font-weight: 300; margin-bottom: 15px; color: #ccc; }
+.socialBox_title_sm .contentDiv { margin-bottom: 25px; font-size: 16px; }
+.socialBox_title_sm .title .socialBox { display: inline-block; float: none; }
+
+.socialBox2 li { display: inline-block; margin: 0 5px;  }
+.socialBox2 li a { width: 40px; height: 40px; display: block; margin: 0px auto; text-decoration: none; background: none; border: 1px solid #000; }
+.socialBox2 li a i { color: #000; font-size: 26px; display: block;  padding-top: 7px; }
+
+@media only screen and (max-width: 979px) {
+	.socialBox_title_sm .title { padding: 20px; }
+}
+/* END OF TEMPLATE 128 AND BLOCK 121*/
+
+
+/* START WITH TEMPLATE 92 AND BLOCK 14*/
+.nocss {}
+/* END OF TEMPLATE 92 AND BLOCK 14*/
+
+
+/* START WITH TEMPLATE 83 AND BLOCK 16*/
+.pagerBox { padding-top: 40px; padding-bottom: 40px; overflow: hidden; padding-left: 30px; padding-right: 30px; background: none; }
+.pagerBox .previousNav { padding-left: 45px; color: #E10042; font-size: 22px; text-decoration: none; position: relative; float: left; font-family: 'Open Sans',sans-serif; }
+.pagerBox .previousNav span { display: block; color: #000000; text-transform: inherit; font-size: 33px; font-family: 'Open Sans',sans-serif; text-transform: uppercase; font-weight: 600; }
+.pagerBox .previousNav:before { content: '\f053'; font-size: 20px; font-family: FontAwesome; position: absolute; left: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.pagerBox .previousNav:hover, .pagerBox .previousNav:hover span { color: #E10042; }
+.pagerBox .nextNav { padding-right: 45px; color: #E10042; font-size: 22px; text-decoration: none; position: relative; float: right; text-align: right; font-family: 'Open Sans',sans-serif;  }
+.pagerBox .nextNav span { display: block; color: #000000; text-transform: inherit; font-size: 33px; font-family: 'Open Sans',sans-serif; text-transform: uppercase; font-weight: 600; }
+.pagerBox .nextNav:before { content: '\f054'; font-size: 20px; font-family: FontAwesome; position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.pagerBox .nextNav:hover, .pagerBox .nextNav:hover span { color: #E10042; }
+/* END OF TEMPLATE 83 AND BLOCK 16*/
+
+
+/* START WITH TEMPLATE 93 AND BLOCK 15*/
+.nocss {}
+/* END OF TEMPLATE 93 AND BLOCK 15*/
+
+
+/* START WITH TEMPLATE 87 AND BLOCK 8*/
+.noShow { display: none; }
+/* END OF TEMPLATE 87 AND BLOCK 8*/
+
+        </style>
+        <!-- END GENERATED CSS -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-140731575-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142536724-1');
+</script>
+
+    <!-- PNotify -->
+    <script src="https://yours-trulli.com/assets/gentelella/vendors/pnotify/dist/pnotify.min.js?v=1684881240"></script>
+    <script src="https://yours-trulli.com/assets/gentelella/vendors/pnotify/dist/pnotify.buttons.min.js?v=1684881240"></script>
+    <script src="https://yours-trulli.com/assets/gentelella/vendors/pnotify/dist/pnotify.nonblock.min.js?v=1684881241"></script>
+
+    <!-- inject:js -->
+    <script src="https://yours-trulli.com/assets/client/js/vendor/mmenu.min.js?v=1560765828"></script>
+	<script src="https://yours-trulli.com/assets/client/js/vendor/jquery.magnific-popup.min.js?v=1560765802"></script>
+    <script src="https://yours-trulli.com/assets/client/js/vendor/cycle2.min.js?v=1575369188"></script>
+    <script src="https://yours-trulli.com/assets/templates/js/vendor/waypoints.min.js?v=1684880895"></script>
+    <script src="https://yours-trulli.com/assets/client/js/vendor/slick.min.js?v=1560799716"></script>
+    <script src="https://sofco.nl/js/universal-parallax.min.js"></script>
+	<script>
+		new universalParallax().init({
+			speed: 4
+		});
+	</script>
+	
+	
+
+
+    <!-- CANONICALS -->
+    
+    <meta property="og:url" content="https://yours-trulli.com/it/home"> <link rel="canonical" href="https://yours-trulli.com/it/home">
+    
+    <!-- /CANONICALS -->
+
+
+    <!-- endinject -->
+
+    
+    <!-- PNotify -->
+    <link href="https://yours-trulli.com/assets/gentelella/vendors/pnotify/dist/pnotify.css?v=1684881240" rel="stylesheet">
+    <link href="https://yours-trulli.com/assets/gentelella/vendors/pnotify/dist/pnotify.buttons.css?v=1684881240" rel="stylesheet">
+    <link href="https://yours-trulli.com/assets/gentelella/vendors/pnotify/dist/pnotify.nonblock.css?v=1684881241" rel="stylesheet">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="https://yours-trulli.com/assets/client/css/vendor/jquery.lightbox.css?v=1568811942" type="text/css" media="all">
+    <link rel="stylesheet" href="https://yours-trulli.com/assets/client/css/main.min.css?v=1560852348" type="text/css" media="all">
+    <link rel="stylesheet" href="https://yours-trulli.com/storage/style/style.css?v=1667913659" type="text/css">
+    <link rel="stylesheet" href="https://yours-trulli.com/assets/client/css/vendor/waypoint-animations.css?v=1560879505" type="text/css" media="all">
+    <link rel="stylesheet" href="https://yours-trulli.com/assets/client/css/vendor/mmenu.css?v=1560765729" type="text/css" media="all">
+	<link rel="stylesheet" href="https://yours-trulli.com/assets/client/css/vendor/magnific-popup.css?v=1560765697" type="text/css" media="all">
+	<link rel="stylesheet" href="https://sofco.nl/css/universal-parallax.min.css" type="text/css" media="all">
+    <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js"></script>
+
+    <!-- endinject -->
+    
+        <!-- inject: metatags -->
+    
+    <meta property="og:site_name" content="Yours trulli">
+	<meta property="og:type" content="website">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Yours-trulli.com">
+	<meta name="revisit-after" content="14 days">
+	
+	<!-- end inject: metatags -->
+    
+    
+    <!-- inject:favicons -->
+    
+	<link rel="apple-touch-icon" sizes="180x180" href="https://yours-trulli.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://yours-trulli.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://yours-trulli.com/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://yours-trulli.com/favicons/site.webmanifest">
+    <link rel="mask-icon" href="https://yours-trulli.com/favicons/safari-pinned-tab.svg" color="#FFFFF">
+    <link rel="shortcut icon" href="https://yours-trulli.com/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="https://yours-trulli.com/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <!-- end inject:favicons -->
+
+
+
+
+  <style class="formBuilder-injected-style" type="text/css">.rendered-form *{box-sizing:border-box}.rendered-form input{line-height:normal}.rendered-form button,.rendered-form input,.rendered-form optgroup,.rendered-form select,.rendered-form textarea{margin:0;font:inherit;color:inherit}.rendered-form textarea{overflow:auto}.rendered-form button,.rendered-form input,.rendered-form select,.rendered-form textarea{font-family:inherit;font-size:inherit;line-height:inherit}.rendered-form .btn-group{position:relative;display:inline-block;vertical-align:middle}.rendered-form .btn-group>.btn{position:relative;float:left}.rendered-form .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){border-top-right-radius:0;border-bottom-right-radius:0}.rendered-form .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle){border-radius:0}.rendered-form .btn-group .btn+.btn,.rendered-form .btn-group .btn+.btn-group,.rendered-form .btn-group .btn-group+.btn,.rendered-form .btn-group .btn-group+.btn-group{margin-left:-1px}.rendered-form .btn-group .input-group-addon:last-child,.rendered-form .btn-group .input-group-btn:first-child>.btn-group:not(:first-child)>.btn,.rendered-form .btn-group .input-group-btn:first-child>.btn:not(:first-child),.rendered-form .btn-group .input-group-btn:last-child>.btn,.rendered-form .btn-group .input-group-btn:last-child>.btn-group>.btn,.rendered-form .btn-group .input-group-btn:last-child>.dropdown-toggle,.rendered-form .btn-group .input-group .form-control:last-child,.rendered-form .btn-group>.btn:last-child:not(:first-child),.rendered-form .btn-group>.dropdown-toggle:not(:first-child){border-top-left-radius:0;border-bottom-left-radius:0}.rendered-form .btn-group>.btn.active,.rendered-form .btn-group>.btn:active,.rendered-form .btn-group>.btn:focus,.rendered-form .btn-group>.btn:hover{z-index:2}.rendered-form .btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border-radius:4px}.rendered-form .btn.btn-lg{padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px}.rendered-form .btn.btn-sm{padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}.rendered-form .btn.btn-xs{padding:1px 5px;font-size:12px;line-height:1.5;border-radius:3px}.rendered-form .btn.active,.rendered-form .btn.btn-active,.rendered-form .btn:active{background-image:none}.rendered-form .input-group-addon:last-child,.rendered-form .input-group-btn:first-child>.btn-group:not(:first-child)>.btn,.rendered-form .input-group-btn:first-child>.btn:not(:first-child),.rendered-form .input-group-btn:last-child>.btn,.rendered-form .input-group-btn:last-child>.btn-group>.btn,.rendered-form .input-group-btn:last-child>.dropdown-toggle,.rendered-form .input-group .form-control:last-child{border-top-left-radius:0;border-bottom-left-radius:0}.rendered-form .input-group-addon,.rendered-form .input-group-btn,.rendered-form .input-group .form-control{display:table-cell}.rendered-form .input-group-lg>.form-control,.rendered-form .input-group-lg>.input-group-addon,.rendered-form .input-group-lg>.input-group-btn>.btn{height:46px;padding:10px 16px;font-size:18px;line-height:1.3333333}.rendered-form .input-group{position:relative;display:table;border-collapse:separate}.rendered-form .input-group .form-control{position:relative;z-index:2;float:left;width:100%;margin-bottom:0}.rendered-form .form-control,.rendered-form output{font-size:14px;line-height:1.42857143;display:block}.rendered-form textarea.form-control{height:auto}.rendered-form .form-control{height:34px;display:block;width:100%;padding:6px 12px;font-size:14px;line-height:1.42857143;border-radius:4px}.rendered-form .form-control:focus{outline:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}.rendered-form .form-group{margin-left:0;margin-bottom:15px}.rendered-form .btn,.rendered-form .form-control{background-image:none}.rendered-form .pull-right{float:right}.rendered-form .pull-left{float:left}.rendered-form .fb-required,.rendered-form .required-asterisk{color:#c10000}.rendered-form .fb-checkbox-group .checkbox,.rendered-form .fb-checkbox-group .checkbox-inline{padding-left:0}.rendered-form .fb-checkbox-group .checkbox-inline input,.rendered-form .fb-checkbox-group .checkbox input{position:relative;margin:4px 0 0}.rendered-form .fb-checkbox-group .checkbox-inline label,.rendered-form .fb-checkbox-group .checkbox label{padding-left:4px}.rendered-form .fb-radio-group .radio,.rendered-form .fb-radio-group .radio-inline{padding-left:0}.rendered-form .fb-radio-group .radio-inline input,.rendered-form .fb-radio-group .radio input{position:relative;margin:4px 0 0}.rendered-form .fb-radio-group .radio-inline label,.rendered-form .fb-radio-group .radio label{padding-left:4px}.rendered-form .fb-checkbox-inline,.rendered-form .fb-radio-inline{display:inline-block;vertical-align:middle}.rendered-form .fb-checkbox-inline:first-child,.rendered-form .fb-radio-inline:first-child{padding-left:0}.rendered-form .fb-autocomplete-list{background-color:#fff;display:none;list-style:none;padding:0;border:1px solid #ccc;border-width:0 1px 1px;position:absolute;z-index:20;max-height:200px;overflow-y:auto}.rendered-form .fb-autocomplete-list li{display:none;cursor:default;padding:5px;margin:0;transition:background-color .2s ease-in-out}.rendered-form .fb-autocomplete-list li.active-option,.rendered-form .fb-autocomplete-list li:hover{background-color:rgba(0,0,0,.075)}.rendered-form .kc-toggle{padding-left:0!important}.rendered-form .kc-toggle span{position:relative;width:48px;height:24px;background:#e6e6e6;display:inline-block;border-radius:4px;border:1px solid #ccc;padding:2px;overflow:hidden;float:left;margin-right:5px;will-change:transform}.rendered-form .kc-toggle span:after,.rendered-form .kc-toggle span:before{position:absolute;display:inline-block;top:0}.rendered-form .kc-toggle span:after{position:relative;content:"";width:50%;height:100%;left:0;border-radius:3px;background:linear-gradient(180deg,#fff 0,#ccc);border:1px solid #999;transition:transform .1s;transform:translateX(0)}.rendered-form .kc-toggle span:before{border-radius:4px;top:2px;left:2px;content:"";width:calc(100% - 4px);height:18px;box-shadow:inset 0 0 1px 1px #b3b3b3;background-color:transparent}.rendered-form .kc-toggle input{height:0;overflow:hidden;width:0;opacity:0;pointer-events:none;margin:0}.rendered-form .kc-toggle input:checked+span:after{transform:translateX(100%)}.rendered-form .kc-toggle input:checked+span:before{background-color:#6fc665}.form-group .fb-required{color:#c10000}.other-val{margin-left:5px;display:none}[tooltip]{position:relative}[tooltip]:hover:after{background:rgba(0,0,0,.9);border-radius:5px 5px 5px 0;bottom:23px;color:#fff;content:attr(tooltip);padding:10px 5px;position:absolute;z-index:98;left:2px;width:230px;text-shadow:none;font-size:12px;line-height:1.5em}[tooltip]:hover:before{border:solid;border-color:#222 transparent;border-width:6px 6px 0;bottom:17px;content:"";left:2px;position:absolute;z-index:99}.tooltip-element{color:#fff;background:#000;width:16px;height:16px;border-radius:8px;display:inline-block;text-align:center;line-height:16px;margin:0 5px;font-size:12px}.form-control.number{width:auto}.form-control[type=color]{width:60px;padding:2px;display:inline-block}.form-control[multiple]{height:auto}</style></head> <body class=""><nav class="menuBox mm-menu mm-offcanvas mm-right" id="mm-nav" aria-hidden="true"><div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened" id="mm-0"><div class="mm-navbar"><a class="mm-title">Menu</a></div><ul class="navMenu hoofdmenu animated fadeIn mm-listview" style="animation-delay: 0.9s;">
+
+<li><a href="https://yours-trulli.com/it/informazioni?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Su di noi</a></li>
+
+<li><a href="https://yours-trulli.com/it/camere?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Camere</a></li>
+
+<li><a href="https://yours-trulli.com/it/colazione-cucina?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Colazione/Cucina</a></li>
+
+<li><a href="https://yours-trulli.com/it/prenota?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Prenota</a></li>
+
+<li><a href="https://yours-trulli.com/it/dintorni?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Dintorni</a></li>
+
+<li><a href="https://yours-trulli.com/it/asini-martina-franca?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Asini di martina franca</a></li>
+
+<li><a href="https://yours-trulli.com/it/webshop?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Shop</a></li>
+
+<li><a href="https://yours-trulli.com/it/diario?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Diario</a></li>
+
+</ul></div></div>
+        </nav> <div id="wrapper" class="mm-page mm-slideout">
+  <!--  / main container \ -->
+  <div id="mainCntr">
+    <!--  / header container \ -->
+    <header id="headerCntr">
+      <div class="top">
+        <!--  / link box \ -->
+        <div class="linkBox">
+        <ul class="miniMenu topmenu">
+
+<li><a href="https://yours-trulli.com/it/home?utm_source=organic&amp;utm_medium=general&amp;utm_content=Top+menu">Home</a></li>
+
+<li><a href="https://yours-trulli.com/it/informazioni?utm_source=organic&amp;utm_medium=general&amp;utm_content=Top+menu">Info</a></li>
+
+<li><a href="https://yours-trulli.com/it/contatto?utm_source=organic&amp;utm_medium=general&amp;utm_content=Top+menu">Contatto</a></li>
+
+<li><a href="https://yours-trulli.com/it/itinerario?utm_source=organic&amp;utm_medium=general&amp;utm_content=Top+menu">Itinerario</a></li>
+
+</ul></div>
+        <!--  / link box \ -->
+
+        <!--  / language box \ -->
+        <div class="languageBox">
+          <ul>
+                                <li><a href="https://yours-trulli.com/nl/home">nl</a>
+                  </li>
+                                <li><a href="https://yours-trulli.com/en/home">en</a>
+                  </li>
+                                <li><a href="https://yours-trulli.com/de/home">de</a>
+                  </li>
+                                <li><a class="is-active" href="https://yours-trulli.com/it/home">it</a>
+                  </li>
+                        </ul>
+        </div>
+        <!--  / language box \ -->
+      </div>
+
+      <div class="bottom">
+        <a class="logo" href="https://yours-trulli.com/it/home"><img src="https://yours-trulli.com/assets/client/img/logo.png?v=1560766424" alt=""></a>
+
+        <img src="https://yours-trulli.com/assets/client/img/sun.png?v=1560766581" class="sun" alt="">
+
+        <img src="https://yours-trulli.com/assets/client/img/bus.png?v=1560766256" class="bus" alt="">
+
+        <img src="https://yours-trulli.com/assets/client/img/animals.png?v=1568897703" class="animal" alt="">
+
+        <!--  / menu box \ -->
+        <nav class="menuBox" id="nav">
+        <ul class="navMenu hoofdmenu animated fadeIn" style="animation-delay: 0.9s;">
+
+<li><a href="https://yours-trulli.com/it/informazioni?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Su di noi</a></li>
+
+<li><a href="https://yours-trulli.com/it/camere?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Camere</a></li>
+
+<li><a href="https://yours-trulli.com/it/colazione-cucina?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Colazione/Cucina</a></li>
+
+<li><a href="https://yours-trulli.com/it/prenota?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Prenota</a></li>
+
+<li><a href="https://yours-trulli.com/it/dintorni?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Dintorni</a></li>
+
+<li><a href="https://yours-trulli.com/it/asini-martina-franca?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Asini di martina franca</a></li>
+
+<li><a href="https://yours-trulli.com/it/webshop?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Shop</a></li>
+
+<li><a href="https://yours-trulli.com/it/diario?utm_source=organic&amp;utm_medium=general&amp;utm_content=Hoofdmenu">Diario</a></li>
+
+</ul></nav>
+        <!--  \ menu box / -->
+
+        <a class="mobileMenu" href="#nav"><span>Menu</span></a>
+      </div>
+    </header>
+    <!--  \ header container / -->
+
+    <!--  / content container \ -->
+    <main id="contentCntr">
+                   
+
+
+    <div id="generatedContent">
+        <div class="sliderBoxYT animated fadeIn" style="animation-delay: 0.5s;">
+					<div class="slider js-block-slider slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+
+						<div class="slick-list draggable" style="padding: 0px;"><div class="slick-track" style="opacity: 1; width: 100000px; transform: translate3d(-8381px, 0px, 0px); transition: transform 2500ms;"><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657610185_23.jpg?v=1657609849')" data-slick-index="-2" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657610185_23.jpg?v=1657609849" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657610185_23.jpg?v=1657609849"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657610186_24.jpg?v=1657610177')" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657610186_24.jpg?v=1657610177" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657610186_24.jpg?v=1657610177"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1560864064_6.jpg?v=1575394564')" data-slick-index="0" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1560864064_6.jpg?v=1575394564" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1560864064_6.jpg?v=1575394564"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1560864065_7.jpg?v=1657571646')" data-slick-index="1" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1560864065_7.jpg?v=1657571646" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1560864065_7.jpg?v=1657571646"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572477_8.jpg?v=1657571696')" data-slick-index="2" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572477_8.jpg?v=1657571696" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572477_8.jpg?v=1657571696"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1560864065_8.jpg?v=1575394565')" data-slick-index="3" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1560864065_8.jpg?v=1575394565" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1560864065_8.jpg?v=1575394565"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657637915_10.jpg?v=1657637897')" data-slick-index="4" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657637915_10.jpg?v=1657637897" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657637915_10.jpg?v=1657637897"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1568890264_9.jpg?v=1575394566')" data-slick-index="5" aria-hidden="true">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1568890264_9.jpg?v=1575394566" class="zoom-btn js-popup-gallery" tabindex="0"><img src="https://yours-trulli.com/storage/cache//templates/images/1568890264_9.jpg?v=1575394566"></a>
+						</div><div class="slide slick-slide slick-current slick-active slick-center" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1568890265_10.jpg?v=1657571489')" data-slick-index="6" aria-hidden="false" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1568890265_10.jpg?v=1657571489" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1568890265_10.jpg?v=1657571489"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_12.jpg?v=1657572398')" data-slick-index="7" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_12.jpg?v=1657572398" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_12.jpg?v=1657572398"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1568890265_11.jpg?v=1575394568')" data-slick-index="8" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1568890265_11.jpg?v=1575394568" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1568890265_11.jpg?v=1575394568"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_14.jpg?v=1657571816')" data-slick-index="9" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_14.jpg?v=1657571816" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_14.jpg?v=1657571816"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1568890266_12.jpg?v=1575394569')" data-slick-index="10" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1568890266_12.jpg?v=1575394569" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1568890266_12.jpg?v=1575394569"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_16.jpg?v=1657571895')" data-slick-index="11" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_16.jpg?v=1657571895" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_16.jpg?v=1657571895"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_17.jpg?v=1657571576')" data-slick-index="12" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_17.jpg?v=1657571576" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_17.jpg?v=1657571576"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_18.jpg?v=1657605151')" data-slick-index="13" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_18.jpg?v=1657605151" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_18.jpg?v=1657605151"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657605231_19.jpg?v=1657605223')" data-slick-index="14" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657605231_19.jpg?v=1657605223" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657605231_19.jpg?v=1657605223"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_19.jpg?v=1657572022')" data-slick-index="15" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_19.jpg?v=1657572022" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_19.jpg?v=1657572022"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572479_20.jpg?v=1657572092')" data-slick-index="16" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572479_20.jpg?v=1657572092" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572479_20.jpg?v=1657572092"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572479_21.jpg?v=1657572466')" data-slick-index="17" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572479_21.jpg?v=1657572466" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572479_21.jpg?v=1657572466"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657610185_23.jpg?v=1657609849')" data-slick-index="18" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657610185_23.jpg?v=1657609849" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657610185_23.jpg?v=1657609849"></a>
+						</div><div class="slide slick-slide" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657610186_24.jpg?v=1657610177')" data-slick-index="19" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657610186_24.jpg?v=1657610177" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657610186_24.jpg?v=1657610177"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1560864064_6.jpg?v=1575394564')" data-slick-index="20" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1560864064_6.jpg?v=1575394564" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1560864064_6.jpg?v=1575394564"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1560864065_7.jpg?v=1657571646')" data-slick-index="21" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1560864065_7.jpg?v=1657571646" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1560864065_7.jpg?v=1657571646"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572477_8.jpg?v=1657571696')" data-slick-index="22" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572477_8.jpg?v=1657571696" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572477_8.jpg?v=1657571696"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1560864065_8.jpg?v=1575394565')" data-slick-index="23" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1560864065_8.jpg?v=1575394565" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1560864065_8.jpg?v=1575394565"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657637915_10.jpg?v=1657637897')" data-slick-index="24" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657637915_10.jpg?v=1657637897" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657637915_10.jpg?v=1657637897"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1568890264_9.jpg?v=1575394566')" data-slick-index="25" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1568890264_9.jpg?v=1575394566" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1568890264_9.jpg?v=1575394566"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1568890265_10.jpg?v=1657571489')" data-slick-index="26" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1568890265_10.jpg?v=1657571489" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1568890265_10.jpg?v=1657571489"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_12.jpg?v=1657572398')" data-slick-index="27" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_12.jpg?v=1657572398" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_12.jpg?v=1657572398"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1568890265_11.jpg?v=1575394568')" data-slick-index="28" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1568890265_11.jpg?v=1575394568" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1568890265_11.jpg?v=1575394568"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_14.jpg?v=1657571816')" data-slick-index="29" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_14.jpg?v=1657571816" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_14.jpg?v=1657571816"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1568890266_12.jpg?v=1575394569')" data-slick-index="30" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1568890266_12.jpg?v=1575394569" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1568890266_12.jpg?v=1575394569"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_16.jpg?v=1657571895')" data-slick-index="31" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_16.jpg?v=1657571895" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_16.jpg?v=1657571895"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_17.jpg?v=1657571576')" data-slick-index="32" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_17.jpg?v=1657571576" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_17.jpg?v=1657571576"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_18.jpg?v=1657605151')" data-slick-index="33" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_18.jpg?v=1657605151" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_18.jpg?v=1657605151"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657605231_19.jpg?v=1657605223')" data-slick-index="34" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657605231_19.jpg?v=1657605223" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657605231_19.jpg?v=1657605223"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572478_19.jpg?v=1657572022')" data-slick-index="35" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572478_19.jpg?v=1657572022" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572478_19.jpg?v=1657572022"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572479_20.jpg?v=1657572092')" data-slick-index="36" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572479_20.jpg?v=1657572092" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572479_20.jpg?v=1657572092"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657572479_21.jpg?v=1657572466')" data-slick-index="37" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657572479_21.jpg?v=1657572466" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657572479_21.jpg?v=1657572466"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657610185_23.jpg?v=1657609849')" data-slick-index="38" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657610185_23.jpg?v=1657609849" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657610185_23.jpg?v=1657609849"></a>
+						</div><div class="slide slick-slide slick-cloned" style="background-image: url('https://yours-trulli.com/storage/cache//templates/images/1657610186_24.jpg?v=1657610177')" data-slick-index="39" aria-hidden="true" tabindex="-1">
+							<a href="https://yours-trulli.com/storage/cache//templates/images/1657610186_24.jpg?v=1657610177" class="zoom-btn js-popup-gallery" tabindex="-1"><img src="https://yours-trulli.com/storage/cache//templates/images/1657610186_24.jpg?v=1657610177"></a>
+						</div></div></div>
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+					<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></div>
+
+					<div class="text">
+						<h4>Onze trullo heeft 4 slaapkamers voor max. 8 personen</h4>
+
+						<p>Om de liefde voor een unieke regio, om de geur van de natuur, voor krachtige smaken ... altijd op zoek, vind de liefde, beleef Puglia. Yours Trulli heet u hartelijk welkom.</p>
+
+						<a href="https://yours-trulli.com/it/boeken?utm_source=organic&amp;utm_medium=general&amp;utm_content=Homepagina+-+slider" class="button">Nu boeken</a>
+					</div>
+				</div>
+<script>
+$(document).ready(function () {
+    var $elm = $('.sliderBoxYT');
+    $elm.css('animation-delay', '0.5s');
+    $elm.waypoint(function () {
+        $elm.addClass('animated fadeIn');
+    }, {
+        offset: '88%'
+    });
+});
+</script><!--  / aboutBox_1col_sub_title \ -->
+<div class="aboutBox_1col_sub_title aboutBox_1col_sub_title17 centered smaller animated fadeInUp" style="animation-delay: 0.6s;">
+  <div class="title">
+    <h3>CAMERE ALLA MODA CON INCENTIVI DREAMY PUGLIA</h3>
+    <p class="highlighted">I TUOI TRULLI TI DANNO IL BENVENUTO A CASA</p>
+  </div>
+  <div class="row d-flex">
+    <div class="col-md-12">
+      <div class="contentDiv"><p>Guidando una vecchia strada di campagna tra Ceglie Messapica e Martina Franca, si arriva finalmente al cancello del Trullo "I tuoi trulli". Il trullo tradizionale è costruito con materiali locali della campagna pugliese e utilizzando tecniche tradizionali. Questa casa in pietra bianca si trova su una cresta che domina la prateria e gli ulivi. Avvolto in un paesaggio glorioso dietro le pareti di arenaria dipinte di bianco, il trullo "Yours Trulli" è costruito come una tipica fattoria "Pugliese", decorata con 4 orgogliosi coni tradizionali, ma con moderni miglioramenti nell'energia solare, tecniche di bioedilizia e isolamento a risparmio energetico. Circondato da cinque ettari di erba e boschi, il trullo è un'enclave di tranquillità e semplicità rurale. <br><br>Benvenuti a casa ...</p></div>
+    </div>
+  </div>
+</div>
+<!--  \ aboutBox_1col_sub_title / -->
+<script>
+$(document).ready(function () {
+    var $elm = $('.aboutBox_1col_sub_title17');
+    $elm.css('animation-delay', '0.6s');
+    $elm.waypoint(function () {
+        $elm.addClass('animated fadeInUp');
+    }, {
+        offset: '88%'
+    });
+});
+</script><div class="galleryBox galleryBox12 centered" style="animation-delay: 0.4s;">
+					<ul class="gallery">
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1560801768_4.jpg?v=1657569745"><img src="https://yours-trulli.com/storage/cache//templates/images/1560801768_3.jpg?v=1657569690" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1560801948_7.jpg?v=1575394678"><img src="https://yours-trulli.com/storage/cache//templates/images/1560801948_6.jpg?v=1575394676" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1560801949_10.jpg?v=1657627744"><img src="https://yours-trulli.com/storage/cache//templates/images/1560801948_9.jpg?v=1657627385" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1560801949_13.jpg?v=1575394682"><img src="https://yours-trulli.com/storage/cache//templates/images/1560801949_12.jpg?v=1575394681" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571189_16.jpg?v=1657570048"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571189_15.jpg?v=1657570009" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1568893243_16.jpg?v=1657568038"><img src="https://yours-trulli.com/storage/cache//templates/images/1568893242_15.jpg?v=1657567984" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1568893245_19.jpg?v=1657569939"><img src="https://yours-trulli.com/storage/cache//templates/images/1568893244_18.jpg?v=1657569868" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1568893248_22.jpg?v=1575394689"><img src="https://yours-trulli.com/storage/cache//templates/images/1568893247_21.jpg?v=1575394688" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1568893250_25.jpg?v=1575394691"><img src="https://yours-trulli.com/storage/cache//templates/images/1568893249_24.jpg?v=1575394690" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571190_31.jpg?v=1657568158"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571190_30.jpg?v=1657568130" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657626372_34.jpg?v=1657626356"><img src="https://yours-trulli.com/storage/cache//templates/images/1657626371_33.jpg?v=1657626152" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571191_34.jpg?v=1657568258"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571191_33.jpg?v=1657568224" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571191_37.jpg?v=1657568426"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571191_36.jpg?v=1657568372" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571192_40.jpg?v=1657568634"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571192_39.jpg?v=1657568571" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571193_43.jpg?v=1657568848"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571192_42.jpg?v=1657568797" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571193_46.jpg?v=1657568944"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571193_45.jpg?v=1657568906" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571194_49.jpg?v=1657569066"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571193_48.jpg?v=1657569020" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571194_52.jpg?v=1657569153"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571194_51.jpg?v=1657569107" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571195_55.jpg?v=1657569263"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571194_54.jpg?v=1657569216" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571195_58.jpg?v=1657569364"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571195_57.jpg?v=1657569317" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571196_61.jpg?v=1657569463"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571195_60.jpg?v=1657569417" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657609759_64.jpg?v=1657609655"><img src="https://yours-trulli.com/storage/cache//templates/images/1657609759_63.jpg?v=1657609628" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657609761_67.jpg?v=1657609751"><img src="https://yours-trulli.com/storage/cache//templates/images/1657609760_66.jpg?v=1657609718" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571196_64.jpg?v=1657569623"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571196_63.jpg?v=1657569558" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571197_67.jpg?v=1657570359"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571197_66.jpg?v=1657570312" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571197_70.jpg?v=1657570489"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571197_69.jpg?v=1657570435" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571198_73.jpg?v=1657570599"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571198_72.jpg?v=1657570547" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571198_76.jpg?v=1657570753"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571198_75.jpg?v=1657570709" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571199_79.jpg?v=1657570847"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571199_78.jpg?v=1657570802" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571199_82.jpg?v=1657570980"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571199_81.jpg?v=1657570914" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571200_85.jpg?v=1657571074"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571200_84.jpg?v=1657571035" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657571201_88.jpg?v=1657571181"><img src="https://yours-trulli.com/storage/cache//templates/images/1657571200_87.jpg?v=1657571153" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657623432_97.jpg?v=1657623009"><img src="https://yours-trulli.com/storage/cache//templates/images/1657623432_96.jpg?v=1657622954" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657623433_100.jpg?v=1657623192"><img src="https://yours-trulli.com/storage/cache//templates/images/1657623433_99.jpg?v=1657623107" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657623434_103.jpg?v=1657627893"><img src="https://yours-trulli.com/storage/cache//templates/images/1657623433_102.jpg?v=1657627850" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657625400_106.jpg?v=1657625328"><img src="https://yours-trulli.com/storage/cache//templates/images/1657625399_105.jpg?v=1657625121" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657628146_112.jpg?v=1657628028"><img src="https://yours-trulli.com/storage/cache//templates/images/1657628146_111.jpg?v=1657627989" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657628147_115.jpg?v=1657628136"><img src="https://yours-trulli.com/storage/cache//templates/images/1657628146_114.jpg?v=1657628091" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657625402_109.jpg?v=1657624900"><img src="https://yours-trulli.com/storage/cache//templates/images/1657625401_108.jpg?v=1657624627" alt="Yours Trulli"></a></li>
+
+						<li><a href="https://yours-trulli.com/storage/cache//templates/images/1657639319_121.jpg?v=1657640823"><img src="https://yours-trulli.com/storage/cache//templates/images/1657639318_120.jpg?v=1657640874" alt="Yours Trulli"></a></li>
+
+					</ul>
+				</div>
+<script>
+$(document).ready(function () {
+    var $elm = $('.galleryBox12');
+    $elm.css('animation-delay', '0.4s');
+    $elm.waypoint(function () {
+        $elm.addClass('animated fadeIn');
+    }, {
+        offset: '88%'
+    });
+});
+</script><!--  / brandBox_1col_title_1btn \ -->
+<div class="brandBox_1col_title_1btn brandBox_1col_title_1btn13 centered smaller" style="animation-delay: 0.3s;">
+  <h3>Prenota direttamente</h3>
+  <div class="contentDiv"><p>Prenota il tuo soggiorno nel nostro trullo direttamente attraverso questo sito web. Ti contatteremo al più presto per confermare la prenotazione e discutere ulteriori dettagli con te.</p>
+<p></p>
+<p></p>
+<p><strong>aereo</strong></p>
+<p><br>Il tuo Trulli è facilmente raggiungibile in aereo, il tempo di volo dai Paesi Bassi è di oltre 2 ore.</p>
+<p></p>
+<p><strong>Ryanair</strong></p>
+<p><br>vola da Eindhoven martedì e sabato e da Bruxelles Charleroi (a volte 2 volte al giorno) a Brindisi. Ryanair vola da Weeze (vicino a Venlo) a Bari lunedì e venerdì.</p>
+<p>L'aeroporto di Maastricht - Aquisgrana ha un volo diretto per Bari la domenica e il mercoledì sera.</p>
+<p></p>
+<p><strong>Transavia</strong></p>
+<p><br>In estate vola ogni giorno, a volte 2 volte al giorno da Amsterdam a Bari, e più volte a settimana dall'aeroporto di Rotterdam a Brindisi.</p>
+<p></p>
+<p>È quindi possibile scegliere tra le opzioni seguenti:</p>
+<p></p>
+<p><strong>Noleggio auto</strong></p>
+<p><br>Puoi noleggiare un'auto in entrambi gli aeroporti, abbiamo buone esperienze con Europcar noi stessi. Da Bari guidi in più di un'ora e Brindisi in più di mezz'ora ai tuoi trulli.</p>
+<p></p>
+<p></p>
+<p><strong>treno</strong></p>
+<p><br>Se scegli di viaggiare ulteriormente con i mezzi pubblici dall'aeroporto, puoi viaggiare in treno da Bari a Martina Franca.</p>
+<p></p>
+<p></p>
+<p><strong>autobus</strong></p>
+<p><br>Dall'aeroporto di Brindisi è possibile arrivare a Martina Franca tramite un trasferimento in autobus.</p>
+<p></p>
+<p></p>
+<p></p>
+<p><strong>I tuoi trulli,</strong></p>
+<p></p>
+<p><strong>Jeroen - Nicole</strong></p></div>
+  <a href="https://yours-trulli.com/it/libro?utm_source=organic&amp;utm_medium=general&amp;utm_content=Rechtstreeks+boeken+" class="btn">Prenota online</a>
+</div>
+<!--  \ brandBox_1col_title_1btn / -->
+<script>
+$(document).ready(function () {
+    var $elm = $('.brandBox_1col_title_1btn13');
+    $elm.css('animation-delay', '0.3s');
+    $elm.waypoint(function () {
+        $elm.addClass('animated fadeInUp');
+    }, {
+        offset: '88%'
+    });
+});
+</script><div class="socialBox_title_sm socialBox_title_sm121" style="animation-delay: 0.3s;">
+  <div class="title">
+    <h1>Seguici sui social media</h1>
+    <ul class="socialBox2">
+    
+      <li><a href="https://www.facebook.com/yourstrullipuglia" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+    
+      <li><a href="https://www.instagram.com/trulliyours/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    
+    </ul>
+  </div>
+</div>
+
+<script>
+$(document).ready(function () {
+    var $elm = $('.socialBox_title_sm121');
+    $elm.css('animation-delay', '0.3s');
+    $elm.waypoint(function () {
+        $elm.addClass('animated fadeIn');
+    }, {
+        offset: '88%'
+    });
+});
+</script><div class="newsletterBox centered" style="animation-delay: 0.1s;">
+					<img src="https://yours-trulli.com/images/footer-logo.png" class="logo" alt="">
+
+					<img src="https://yours-trulli.com/images/bus.png" class="bus" alt="">
+
+					<img src="https://yours-trulli.com/images/animals2.png" class="animals" alt="">
+
+					<div class="mid">
+						<h4>sign up for our newsletter</h4>
+
+						 <form action="https://yours-trulli.com/it/api/newsfeed/store" method="post">
+<script src="https://www.google.com/recaptcha/api.js?ver=1" async="" defer=""></script>
+    <script>
+        var loadedRecaptcha =false;
+        function onSubmit(token) {
+            console.log("Callback recaptcha");
+            loadedRecaptcha = true;
+            $("#recaptcha").closest("form").submit();
+        }
+    </script>
+    <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcGa-QZAAAAAObJn61lUBPQcT2NrFjUHFQrUyVm" data-callback="onSubmit" data-size="invisible"><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-z779wun4hxug" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcGa-QZAAAAAObJn61lUBPQcT2NrFjUHFQrUyVm&amp;co=aHR0cHM6Ly95b3Vycy10cnVsbGkuY29tOjQ0Mw..&amp;hl=en&amp;v=bUO1BXI8H9PgjAPSW9hwuSeI&amp;size=invisible&amp;cb=tfof0qt9d7tu"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+
+    <script>
+        $("#recaptcha").closest("form").on("submit", function (e) {
+            if(!loadedRecaptcha) {
+                e.preventDefault();
+                console.log("Prevent default");
+            }
+            console.log("Submitted");
+            //grecaptcha.reset();
+            grecaptcha.execute();
+        });
+    </script>
+
+							<input type="email" name="email" placeholder=" Il tuo indirizzo e-mail">
+
+							<button type="submit" class="button-sm">registro</button>
+<input type="hidden" name="redirectSite" value="grazie-notiziario">
+<input type="hidden" name="thisUrl" value="https://yours-trulli.com/it/home">
+						</form>
+
+					</div>
+				</div>
+<script>
+$(document).ready(function () {
+    var $newsletterBox = $('.newsletterBox');
+    $newsletterBox.css('animation-delay', '0.1s');
+    $newsletterBox.waypoint(function () {
+        $newsletterBox.addClass('animated fadeInUp');
+    }, {
+        offset: '88%'
+    });
+});
+</script>
+<div class="clear"></div>
+        <!--  / pager box \ -->
+        <div class="pagerBox centered">
+                            <a href="https://yours-trulli.com/it/contatto" class="nextNav"><span>Contatto</span> registra con il tuo Trulli</a>
         </div>
 
-        <!-- Photo Gallery -->
-        <section class="photo-gallery">
-            <h2>La Nostra Proprietà</h2>
-            <div class="gallery">
-                <img src="https://via.placeholder.com/300x200.png?text=Esterno+Villa" alt="Esterno Villa">
-                <img src="https://via.placeholder.com/300x200.png?text=Camera" alt="Camera">
-                <img src="https://via.placeholder.com/300x200.png?text=Giardino" alt="Giardino">
-                <img src="https://via.placeholder.com/300x200.png?text=Interno" alt="Interno">
-            </div>
-        </section>
-
-        <!-- Footer with Address and Contact -->
-        <footer>
-            <h3>Contattaci</h3>
-            <p>Via Belvedere, 10, Castelnuovo del Garda, Verona (VR), Italia</p>
-            <p>Alessandro (IT, ENG): <a href="tel:+390000000000">+39 000 000 0000</a></p>
-            <p>Jenny (DE, GR, IT, ENG): <a href="tel:+300000000000">+30 000 000 0000</a></p>
-            <p>Email: <a href="mailto:info@villamagellano.com">info@villamagellano.com</a></p>
-            <p>© 2025 Villa Magellano. Tutti i diritti riservati.</p>
-        </footer>
+        <!--  \ pager box / --><div class="clear"></div>
+<div class="mapBox #naam#" style="background-image: url('https://yours-trulli.com/images/map-img.jpg')"></div>
+<script>
+$(document).ready(function(){
+$(".topMenu").removeClass("noShow");
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".topMenu").removeClass("noShow");
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".topMenu").removeClass("noShow");
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".topMenu").removeClass("noShow");
+});
+</script>
     </div>
-</body>
-</html>
+
+    
+                       </main>
+                   <!--  \ content container / -->
+
+                   <!--  / footer container \ -->
+                   <footer id="footerCntr">
+                     <!--  \ widget box / -->
+                     <div class="widgetBox">
+                       <div class="inner">
+                         
+                         <div class="holder tempMenu menuBottom">
+
+                        <div class="topMenu tempMenuItem">
+                      <h4>Generale</h4>
+                      <nav>
+                        <ul>
+                          <li><a href="https://yours-trulli.com/it/home?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+algemeen">casa</a></li><li><a href="https://yours-trulli.com/it/informazioni?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+algemeen">Informazioni</a></li><li><a href="https://yours-trulli.com/it/contatto?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+algemeen">Contatto</a></li><li><a href="https://yours-trulli.com/it/itinerario?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+algemeen">Itinerario</a></li><li><a href="https://yours-trulli.com/it/diario?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+algemeen">Diario</a></li>
+                        </ul>
+                      </nav>
+                    </div><div class="topMenu tempMenuItem">
+                      <h4>Durante la notte</h4>
+                      <nav>
+                        <ul>
+                          <li><a href="https://yours-trulli.com/it/camere?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+Overnachten">Camere</a></li><li><a href="https://yours-trulli.com/it/colazione-cucina?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+Overnachten">Colazione/cucina</a></li><li><a href="https://yours-trulli.com/it/accordi?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+Overnachten">Accordi</a></li><li><a href="https://yours-trulli.com/it/prenota?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+Overnachten">Prenota</a></li>
+                        </ul>
+                      </nav>
+                    </div><div class="topMenu tempMenuItem">
+                      <h4>Prodotti</h4>
+                      <nav>
+                        <ul>
+                          <li><a href="https://yours-trulli.com/it/webshop?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+Producten">Shop</a></li>
+                        </ul>
+                      </nav>
+                    </div><div class="topMenu tempMenuItem">
+                      <h4>Informazioni</h4>
+                      <nav>
+                        <ul>
+                          <li><a href="https://yours-trulli.com/it/dintorni?utm_source=organic&amp;utm_medium=general&amp;utm_content=Menu+informatie">Dintorni</a></li>
+                        </ul>
+                      </nav>
+                    </div></div>
+
+
+                       </div>
+                     </div>
+                     <!--  \ widget box / -->
+
+                     <!--  \ copyright box / -->
+                     <div class="copyright">
+                       <ul>
+                         <li>© Copyright Yours Trulli </li>
+                         <li><a href="https://yours-trulli.com/it/politica-sulla-privacy">Privacy Statement</a></li>
+                         <li>Design &amp; developed by <a href="https://sofco.nl" target="_blank">Sofco.nl</a></li>
+                       </ul>
+                     </div>
+                     <!--  \ copyright box / -->
+
+                   </footer>
+                   <!--  \ footer container / -->
+
+
+                 </div>
+                 <!--  \ main container / -->
+
+               </div>
+               <!--  \ wrapper / -->
+ 
+    
+
+    <script>
+        $(document).ready(function () {
+            $('.selectpicker').selectpicker({
+                deselectAllText: 'Deselecteer alles', noneSelectedText: 'Geen items gevonden',
+            });
+        });
+    </script>
+
+
+            <script src="https://yours-trulli.com/assets/gentelella/node_modules/formBuilder/dist/form-render.min.js?v=1684881063"></script>
+
+
+
+        <!-- BEGIN GENERATED SCRIPT-->
+        <script>
+            
+        </script>
+        <!-- END GENERATED SCRIPT-->
+
+        <script>
+            $("#generatedContent").find(".navMenu").each(function () {
+                $(this).removeClass("noShow");
+                $(this).appendTo(".menuBox");
+            });
+
+            $("#generatedContent").find(".miniMenu").each(function () {
+                $(this).removeClass("noShow");
+                $(this).appendTo(".linkBox");
+            });
+
+            $("#generatedContent").find(".tempMenuItem").each(function () {
+                $(this).removeClass("noShow");
+                $(this).appendTo(".tempMenu ");
+            });
+
+            //$('#topMenuNav').replaceWith(function() {
+            //    return $('.topItems');
+            //});
+        </script>
+        <script>
+        $(document).ready(function () {
+                    });
+    </script>
+    
+    <script src="https://yours-trulli.com/assets/client/js/vendor/jquery.lightbox.min.js?v=1575368870"></script>
+    <script src="https://yours-trulli.com/assets/client/js/main.min.js?v=1575369691"></script>
+
+      <div id="mm-blocker" class="mm-slideout"></div><div id="lightbox-48868" class="lightbox" style="display:none;"><a href="#" class="lightbox__close lightbox__button"></a><a href="#" class="lightbox__nav lightbox__nav--prev lightbox__button"></a><a href="#" class="lightbox__nav lightbox__nav--next lightbox__button"></a><div href="#" class="lightbox__caption"><p></p></div></div><veepn-guard-alert><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-guard-alert><veepn-lock-screen><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-lock-screen><div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility linear 0.3s, opacity 0.3s linear; opacity: 0;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div><div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: fixed; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255);"><iframe title="recaptcha challenge expires in two minutes" name="c-z779wun4hxug" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=bUO1BXI8H9PgjAPSW9hwuSeI&amp;k=6LcGa-QZAAAAAObJn61lUBPQcT2NrFjUHFQrUyVm" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
