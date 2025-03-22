@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore The Area - Yours Trulli</title>
+  <meta name="description" content="Discover the beautiful Puglia region surrounding Yours Trulli, from ancient towns to pristine beaches" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            trulli: {
+              100: 'hsl(36, 33%, 98%)',
+              200: 'hsl(36, 8%, 88%)',
+              500: 'hsl(33, 3%, 40%)',
+              900: 'hsl(33, 3%, 19%)',
+            }
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: hsl(33, 3%, 19%);
+      background-color: hsl(36, 33%, 98%);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      letter-spacing: -0.025em;
+    }
+    .hover-lift {
+      transition: transform 0.35s ease-out;
+    }
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    .image-grid img {
+      transition: transform 1.5s ease;
+    }
+    .image-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white py-4 sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-serif">Yours Trulli</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-trulli-900 hover:text-trulli-500">Home</a>
+        <a href="about.html" class="text-trulli-900 hover:text-trulli-500">About</a>
+        <a href="rooms.html" class="text-trulli-900 hover:text-trulli-500">Our Trulli</a>
+        <a href="area.html" class="text-trulli-900 hover:text-trulli-500 font-medium">The Area</a>
+        <a href="gallery.html" class="text-trulli-900 hover:text-trulli-500">Gallery</a>
+        <a href="booking.html" class="text-trulli-900 hover:text-trulli-500">Book Now</a>
+      </div>
+      <button class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Area Header -->
+  <div class="pt-32 pb-16 bg-trulli-100">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="inline-block px-3 py-1 text-xs tracking-wider uppercase bg-trulli-200 text-trulli-500 mb-6">
+          Discover Puglia
+        </span>
+        <h1 class="text-4xl md:text-5xl font-serif mb-6 leading-tight">
+          Explore the Enchanting Region
+        </h1>
+        <p class="text-lg text-trulli-500 leading-relaxed">
+          From historic whitewashed towns and ancient olive groves to pristine beaches and delectable cuisine, experience the authentic charm of Puglia from your base at Yours Trulli.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Area Overview -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-serif mb-6">The Heart of Puglia</h2>
+          <p class="text-trulli-500 mb-6 leading-relaxed">
+            Yours Trulli is located in the Valle d'Itria, one of Puglia's most picturesque areas, characterized by rolling hills, ancient olive trees, and the iconic trulli houses. This central location makes it the perfect base to explore the region's many treasures.
+          </p>
+          <p class="text-trulli-500 mb-6 leading-relaxed">
+            Within a short drive, you can discover charming towns like Alberobello, a UNESCO World Heritage site famous for its dense concentration of trulli, or Ostuni, the "White City" perched dramatically on a hill with panoramic views of the countryside.
+          </p>
+          <p class="text-trulli-500 leading-relaxed">
+            The coast is just 20 minutes away, offering pristine beaches with crystal-clear waters. Inland, you'll find historic sites, nature reserves, and vineyards producing Puglia's renowned wines.
+          </p>
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img 
+            src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?q=80&w=2970&auto=format&fit=crop" 
+            alt="Panoramic view of Valle d'Itria" 
+            class="w-full h-auto hover:scale-105 transition-transform duration-1000"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 bg-trulli-100">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6">Strategically Located</h2>
+        <p class="text-trulli-500">
+          Yours Trulli is ideally situated to explore the best of Puglia. Here's how far you are from major attractions:
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <h3 class="text-xl font-medium mb-6">Distances From Yours Trulli</h3>
+          <ul class="space-y-4">
+            <li class="flex justify-between items-center pb-4 border-b border-trulli-200">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900 mr-3"><path d="M3 21 7 3h10l4 18"/><path d="m7 9 10 .01"/><path d="M7 3v4"/><path d="M7 14v4"/><path d="M17 3v4"/><path d="M17 14v4"/></svg>
+                <span>Alberobello (UNESCO Trulli)</span>
+              </div>
+              <span class="font-medium">7 km</span>
+            </li>
+            <li class="flex justify-between items-center pb-4 border-b border-trulli-200">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900 mr-3"><path d="M8 3c.132 0 .26.02.382.061A1.59 1.59 0 0 1 10 1c1.5 0 3 1.5 3 3 0-1.5 1.5-3 3-3 1.59 0 3 1.5 3 3v4c0 3.976-2.592 8.462-6 12-3.408-3.538-6-8.024-6-12V4a2.96 2.96 0 0 1 1-1Z"/></svg>
+                <span>Ostuni (White City)</span>
+              </div>
+              <span class="font-medium">15 km</span>
+            </li>
+            <li class="flex justify-between items-center pb-4 border-b border-trulli-200">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900 mr-3"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+                <span>Torre Canne Beach</span>
+              </div>
+              <span class="font-medium">18 km</span>
+            </li>
+            <li class="flex justify-between items-center pb-4 border-b border-trulli-200">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900 mr-3"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Locorotondo</span>
+              </div>
+              <span class="font-medium">8 km</span>
+            </li>
+            <li class="flex justify-between items-center pb-4 border-b border-trulli-200">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900 mr-3"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+                <span>Polignano a Mare</span>
+              </div>
+              <span class="font-medium">35 km</span>
+            </li>
+            <li class="flex justify-between items-center pb-4 border-b border-trulli-200">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900 mr-3"><path d="M20 7h-7L10 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"/></svg>
+                <span>Lecce (Baroque City)</span>
+              </div>
+              <span class="font-medium">85 km</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900 mr-3"><path d="M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 8h12"/><path d="M18.3 17.7a2.5 2.5 0 0 1-3.16 3.83 2.53 2.53 0 0 1-1.14-2V12"/><path d="M10 17.7a2.5 2.5 0 0 0 3.16 3.83c.62-.35 1.05-1 1.14-1.7V12"/><path d="M12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg>
+                <span>Bari Airport</span>
+              </div>
+              <span class="font-medium">70 km</span>
+            </li>
+          </ul>
+        </div>
+        <div class="h-96 rounded-lg overflow-hidden">
+          <!-- Embedded Google Map -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97364.89494380304!2d17.169673599999998!3d40.8288716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347d37756c0c2c3%3A0x9e85973a50f99bf9!2sAlberobello%2C%20BA%2C%20Italy!5e0!3m2!1sen!2sus!4v1686941214545!5m2!1sen!2sus" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nearby Towns -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6">Charming Towns to Explore</h2>
+        <p class="text-trulli-500">
+          Puglia is home to some of Italy's most picturesque towns, each with its own unique character and charm
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 image-grid">
+        <!-- Town 1 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1565091058943-e9f38dbf3734?q=80&w=2865&auto=format&fit=crop" 
+              alt="Alberobello" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Alberobello</h3>
+            <p class="text-trulli-500 mb-4">
+              A UNESCO World Heritage site, Alberobello is famous for its unique trulli houses with conical roofs. Explore the enchanting quarters of Rione Monti and Aia Piccola.
+            </p>
+            <div class="flex items-center text-sm text-trulli-900">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0z"/><circle cx="12" cy="8" r="2"/></svg>
+              <span>7 km from Yours Trulli</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Town 2 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1600001435638-f11ec5592c5d?q=80&w=2938&auto=format&fit=crop" 
+              alt="Ostuni" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Ostuni</h3>
+            <p class="text-trulli-500 mb-4">
+              Known as the "White City" for its dazzling whitewashed buildings that cascade down a hillside. Wander through the labyrinthine streets and enjoy panoramic views of the Adriatic Sea.
+            </p>
+            <div class="flex items-center text-sm text-trulli-900">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0z"/><circle cx="12" cy="8" r="2"/></svg>
+              <span>15 km from Yours Trulli</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Town 3 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1558366358-bcd430a17061?q=80&w=2874&auto=format&fit=crop" 
+              alt="Locorotondo" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Locorotondo</h3>
+            <p class="text-trulli-500 mb-4">
+              One of Italy's most beautiful villages, Locorotondo is a circular town with immaculate whitewashed houses, decorated balconies, and flower-filled streets.
+            </p>
+            <div class="flex items-center text-sm text-trulli-900">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0z"/><circle cx="12" cy="8" r="2"/></svg>
+              <span>8 km from Yours Trulli</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Town 4 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1619430041587-4437255c2dbb?q=80&w=2940&auto=format&fit=crop" 
+              alt="Polignano a Mare" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Polignano a Mare</h3>
+            <p class="text-trulli-500 mb-4">
+              Perched on dramatic limestone cliffs above the Adriatic Sea, this coastal gem features a charming old town and the famous Lama Monachile beach nestled in a rocky cove.
+            </p>
+            <div class="flex items-center text-sm text-trulli-900">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0z"/><circle cx="12" cy="8" r="2"/></svg>
+              <span>35 km from Yours Trulli</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Town 5 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1608027607656-f309e6fdf028?q=80&w=2830&auto=format&fit=crop" 
+              alt="Martina Franca" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Martina Franca</h3>
+            <p class="text-trulli-500 mb-4">
+              A baroque gem with elegant piazzas, intricate facades, and a lively atmosphere. Known for its prestigious summer opera festival and excellent local salumi.
+            </p>
+            <div class="flex items-center text-sm text-trulli-900">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0z"/><circle cx="12" cy="8" r="2"/></svg>
+              <span>12 km from Yours Trulli</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Town 6 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1601676424348-39aa9de31671?q=80&w=2940&auto=format&fit=crop" 
+              alt="Lecce" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Lecce</h3>
+            <p class="text-trulli-500 mb-4">
+              Often called the "Florence of the South," Lecce is renowned for its ornate baroque architecture, rich history, and vibrant cultural scene. Don't miss the stunning Basilica di Santa Croce.
+            </p>
+            <div class="flex items-center text-sm text-trulli-900">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0z"/><circle cx="12" cy="8" r="2"/></svg>
+              <span>85 km from Yours Trulli</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beaches -->
+  <section class="py-20 bg-trulli-100">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6">Pristine Beaches</h2>
+        <p class="text-trulli-500">
+          Puglia boasts some of Italy's most beautiful coastlines, with crystal-clear waters and diverse beach experiences
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Beach Map/Image -->
+        <div class="relative overflow-hidden rounded-lg aspect-square md:aspect-auto">
+          <img 
+            src="https://images.unsplash.com/photo-1597500308297-25c06f0145d4?q=80&w=2940&auto=format&fit=crop" 
+            alt="Puglia coastline aerial view" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
+          />
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-trulli-900/80 to-transparent p-6">
+            <p class="text-white text-sm">
+              Puglia features over 800 kilometers of coastline along both the Adriatic and Ionian seas
+            </p>
+          </div>
+        </div>
+        
+        <!-- Beach List -->
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-xl font-serif mb-3 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 text-trulli-900"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+              Torre Canne
+            </h3>
+            <p class="text-trulli-500">
+              Just 18 km from Yours Trulli, this family-friendly beach offers shallow waters, soft sand, and excellent facilities. The thermal baths here are renowned for their therapeutic properties.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-serif mb-3 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 text-trulli-900"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+              Porto Selvaggio
+            </h3>
+            <p class="text-trulli-500">
+              A protected natural reserve with a rugged coastline and crystal-clear waters, perfect for snorkeling. Surrounded by pine forests, it offers a more wild and natural beach experience.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-serif mb-3 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 text-trulli-900"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+              Punta Prosciutto
+            </h3>
+            <p class="text-trulli-500">
+              Often compared to Caribbean beaches, Punta Prosciutto features fine white sand and turquoise waters. It's worth the drive to experience one of Italy's most beautiful beaches.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-serif mb-3 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 text-trulli-900"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+              Baia dei Turchi
+            </h3>
+            <p class="text-trulli-500">
+              A pristine beach near Otranto with fine sand and shallow waters, surrounded by Mediterranean pine forests. Named after the landing of Turkish troops in the 15th century.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gastronomy -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6">Culinary Delights</h2>
+        <p class="text-trulli-500">
+          Puglia's cuisine is renowned for its simplicity, freshness, and rich flavors, showcasing the region's agricultural bounty
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 image-grid">
+        <!-- Food 1 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1518133683791-0b9de5a055f0?q=80&w=2787&auto=format&fit=crop" 
+              alt="Orecchiette pasta" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Orecchiette</h3>
+            <p class="text-trulli-500">
+              The region's iconic ear-shaped pasta, traditionally served with cime di rapa (turnip tops) or a rich tomato sauce. In Bari's old town, you can watch local women making fresh orecchiette by hand.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Food 2 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1555072956-7758afb20e8f?q=80&w=2787&auto=format&fit=crop" 
+              alt="Burrata cheese" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Burrata</h3>
+            <p class="text-trulli-500">
+              A specialty of Andria, burrata is a rich, creamy cheese made from mozzarella and cream. The outer shell is solid mozzarella, while the inside contains soft, stringy curd and fresh cream.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Food 3 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1590321361628-5f9a4fb814ef?q=80&w=2874&auto=format&fit=crop" 
+              alt="Olive oil" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Olive Oil</h3>
+            <p class="text-trulli-500">
+              Puglia produces about 40% of Italy's olive oil, with some trees dating back over 1,000 years. The region's olive oil is prized for its fruity flavor and peppery finish.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Food 4 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1571499258263-31502094fd5a?q=80&w=2940&auto=format&fit=crop" 
+              alt="Focaccia" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Focaccia Barese</h3>
+            <p class="text-trulli-500">
+              A thick, soft bread topped with cherry tomatoes, olives, and oregano. Bari's version is uniquely made with potato in the dough, creating a moist and fluffy texture.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Food 5 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=2940&auto=format&fit=crop" 
+              alt="Fresh seafood" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Fresh Seafood</h3>
+            <p class="text-trulli-500">
+              With its extensive coastline, Puglia offers exceptional seafood. Don't miss specialties like tiella (baked rice, potatoes, and mussels) or freshly caught sea urchins in coastal towns.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Food 6 -->
+        <div class="bg-trulli-100 rounded-lg overflow-hidden shadow-sm hover-lift">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1516100882582-96c3a05fe590?q=80&w=2787&auto=format&fit=crop" 
+              alt="Wine" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-serif mb-2">Primitivo Wine</h3>
+            <p class="text-trulli-500">
+              This robust red wine is Puglia's most famous grape variety. Related to California's Zinfandel, it produces full-bodied wines with rich flavors of dark fruits and spices.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-16 text-center">
+        <p class="text-lg text-trulli-500 italic max-w-2xl mx-auto">
+          "At Yours Trulli, we can arrange private cooking classes, wine tastings, and restaurant recommendations to help you explore Puglia's culinary treasures."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities & Experiences -->
+  <section class="py-20 bg-trulli-100">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6">Experiences & Activities</h2>
+        <p class="text-trulli-500">
+          Discover the many ways to experience Puglia's rich culture, history, and natural beauty
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Activity 1 -->
+        <div class="flex bg-white p-6 rounded-lg shadow-sm hover-lift">
+          <div class="mr-5 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900"><path d="M10 21v-6.5a2.5 2.5 0 0 1 5 0V21"/><path d="M22 16c0 4-2.5 5-5.5 5S11 20 11 16v-2a10 10 0 0 1 20 0v2c0 4-2.5 5-5.5 5S20 20 20 16"/><path d="M4 22V5"/><path d="M4 15h.4a.6.6 0 0 0 .6-.5.6.6 0 0 1 .6-.5"/><path d="M7 15.5a2.5 2.5 0 0 0-3-2"/><path d="M2 5h6"/></svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-serif mb-3">Olive Oil Tasting</h3>
+            <p class="text-trulli-500">
+              Visit an ancient masseria (fortified farmhouse) with centuries-old olive trees to learn about the production process and taste different varieties of the region's "green gold."
+            </p>
+          </div>
+        </div>
+        
+        <!-- Activity 2 -->
+        <div class="flex bg-white p-6 rounded-lg shadow-sm hover-lift">
+          <div class="mr-5 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15v-3.5a2.5 2.5 0 0 1 5 0V15"/><path d="M9 13.5h5"/></svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-serif mb-3">Cooking Classes</h3>
+            <p class="text-trulli-500">
+              Learn to prepare traditional Pugliese dishes with local chefs. From handmade pasta to classic tiella, unlock the secrets of the region's beloved cuisine.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Activity 3 -->
+        <div class="flex bg-white p-6 rounded-lg shadow-sm hover-lift">
+          <div class="mr-5 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900"><path d="M23 6v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"/><path d="M7 12h10"/></svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-serif mb-3">Yacht Charters</h3>
+            <p class="text-trulli-500">
+              Explore Puglia's stunning coastline by sea. Private boat tours offer access to hidden coves, grottoes, and beaches that can't be reached by land.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Activity 4 -->
+        <div class="flex bg-white p-6 rounded-lg shadow-sm hover-lift">
+          <div class="mr-5 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-serif mb-3">Cycling Tours</h3>
+            <p class="text-trulli-500">
+              The rolling countryside of Valle d'Itria is perfect for cycling. Guided tours take you through ancient olive groves, vineyards, and charming villages off the beaten path.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Activity 5 -->
+        <div class="flex bg-white p-6 rounded-lg shadow-sm hover-lift">
+          <div class="mr-5 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-serif mb-3">Artisan Workshops</h3>
+            <p class="text-trulli-500">
+              Try your hand at traditional crafts with local artisans. Learn pottery in Grottaglie, paper-mache in Lecce, or the art of basket weaving from village masters.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Activity 6 -->
+        <div class="flex bg-white p-6 rounded-lg shadow-sm hover-lift">
+          <div class="mr-5 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-trulli-900"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-serif mb-3">Wine Tasting</h3>
+            <p class="text-trulli-500">
+              Discover the wines of Puglia at local vineyards and wineries. From robust Primitivo to elegant Negroamaro, experience guided tastings with paired local specialties.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center">
+        <p class="text-trulli-500 mb-6">
+          Our concierge can arrange any of these experiences for you, with private guides and transportation if desired.
+        </p>
+        <a href="booking.html" class="inline-block py-3 px-8 bg-trulli-900 text-white font-medium hover:bg-trulli-900/90 transition-colors rounded-md">
+          Inquire About Experiences
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 md:py-28 relative">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1606046604972-77cc76aee944?q=80&w=2832&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+    <div class="absolute inset-0 bg-trulli-900/70"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="max-w-3xl mx-auto text-center text-white">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
+          Your Gateway to Puglia's Treasures
+        </h2>
+        <p class="text-white/80 mb-10">
+          Let Yours Trulli be your home base as you explore the wonders of Puglia. Our team is ready to help you plan the perfect itinerary for your stay.
+        </p>
+        <a 
+          href="booking.html" 
+          class="inline-block py-3 px-8 bg-white text-trulli-900 font-medium hover:bg-white/90 transition-colors"
+        >
+          Book Your Stay
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-trulli-900 text-white">
+    <div class="container mx-auto px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-serif mb-4">Yours Trulli</h3>
+          <p class="text-white/70 mb-6">Experience the magic of authentic Puglia in our meticulously restored trulli houses.</p>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-medium mb-4">Contact</h4>
+          <address class="text-white/70 not-italic">
+            <p class="mb-2">Via delle Trulli, 42</p>
+            <p class="mb-2">70011 Alberobello, Puglia</p>
+            <p class="mb-2">Italy</p>
+            <p class="mb-2">+39 123 456 7890</p>
+            <p>info@yourstrulli.com</p>
+          </address>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-medium mb-4">Links</h4>
+          <ul class="space-y-2 text-white/70">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="rooms.html" class="hover:text-white transition-colors">Our Trulli</a></li>
+            <li><a href="area.html" class="hover:text-white transition-colors">The Area</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="booking.html" class="hover:text-white transition-colors">Book Now</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-medium mb-4">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white/70 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="text-white/70 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="text-white/70 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-white/70 text-sm">&copy; 2023 Yours Trulli. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-white/70 text-sm hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="text-white/70 text-sm hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Required script -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+</html>
