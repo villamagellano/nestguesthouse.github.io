@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Magellano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="static/logonobgfavicon.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8E1; /* Light warm yellow */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #FFCA28; /* Bright summer yellow */
+            padding: 20px;
+            text-align: center;
+        }
+        .header-logo-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .header-logo-title img {
+            width: 80px;
+        }
+        .header-logo-title h1 {
+            font-family: 'Playfair Display', serif;
+            color: #FFFFFF;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            background-color: #FFAB91; /* Soft orange */
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #81D4FA; /* Light blue hover */
+        }
+        nav ul li a img {
+            width: 24px;
+            vertical-align: middle;
+        }
+        .logo {
+            text-align: center;
+            padding: 20px;
+        }
+        .logo-img {
+            width: 150px;
+        }
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            color: #FFFFFF;
+            background: url('static/front22.jpg') center/cover no-repeat;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin: 0;
+            color: #FFCA28; /* Bright yellow */
+        }
+        .hero h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF5722; /* Vibrant orange */
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #81D4FA; /* Light blue */
+        }
+        footermap {
+            padding: 20px;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+        .map-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            border: 2px solid #81D4FA; /* Light blue border */
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #FFCA28; /* Bright yellow */
+            padding: 20px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .icon-box {
+            text-align: center;
+        }
+        .icon-box i {
+            font-size: 1.5em;
+            color: #FF5722; /* Vibrant orange */
+            margin-bottom: 10px;
+        }
+        .icon-box p {
+            margin: 5px 0;
+        }
+        .icon-box a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .icon-box a:hover {
+            color: #81D4FA; /* Light blue */
+        }
+        footer h5 {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-logo-title">
+                <img src="static/logonobg.png" alt="Villa Magellano Logo" class="logo-img">
+                <h1>Villa Magellano</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="prices.html">Prices & Services</a></li>
+                    <li>
+                        <a href="index-it.html" id="lang-switch">
+                            <img src="static/it.png" alt="Italian Flag">
+                        </a>
+                    </li>
+                </ul>            
+            </nav>                        
+        </header>
+
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="static/logonobg.png" alt="Villa Magellano Logo" class="logo-img">
+        </div>
+
+        <!-- Hero Section -->
+        <section 
+            class="hero" 
+            style="background: url('static/front22.jpg') center/cover no-repeat;">
+            <h2>Welcome to Villa Magellano</h2>
+            <h3>Relax in the heart of Castelnuovo del Garda</h3>
+            <p></p>
+            <a href="rooms.html" class="btn">Browse Rooms</a>
+        </section>
+
+        <!-- Map Section -->
+        <footermap>
+            <div class="map-container">
+                <!-- Updated iframe for Villa Magellano in Castelnuovo del Garda -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.105193970947!2d10.760587615553225!3d45.43842297910055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781e8e8e8e8e8e8%3A0x0!2sCastelnuovo%20del%20Garda%2C%20VR%2C%20Italy!5e0!3m2!1sen!2sit!4v1731749765168!5m2!1sen!2sit" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </footermap>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-icons">
+                <div class="icon-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Via Belvedere, 10</p>
+                    <p>Castelnuovo del Garda</p>
+                    <p>Verona (VR), Italy</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>Alessandro (IT, ENG): +39 3450233733</p>
+                    <p>Jenny (DE, GR, IT, ENG): +30 6974565068</p>
+                    <p><a href="mailto:info@villamagellano.com">info@villamagellano.com</a></p>
+                </div>
+                <div class="icon-box">
+                    <i class="fab fa-instagram"></i>
+                    <p><a href="https://www.instagram.com/villamagellano" target="_blank">Follow us on Instagram</a></p>
+                </div>
+            </div>
+            <h5>© 2025 Villa Magellano. All rights reserved.</h5>
+        </footer>
+    </div>
+</body>
+</html>
