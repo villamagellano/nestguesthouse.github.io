@@ -1,230 +1,498 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nest Guesthouse - Garda Lake - Verona</title>
-  <meta name="description" content="Experience the authentic Garda Lake in our luxurious villa" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="icon" href="static/logo.jpeg" type="image/png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            serif: ['Playfair Display', 'serif'],
-          },
-          colors: {
-            trulli: {
-              100: 'hsl(36, 33%, 98%)',
-              200: 'hsl(36, 8%, 88%)',
-              500: 'hsl(33, 3%, 40%)',
-              900: 'hsl(33, 3%, 19%)',
-            }
-          },
-        }
-      }
-    }
-  </script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      color: hsl(33, 3%, 19%);
-      background-color: hsl(36, 33%, 98%);
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 500;
-      letter-spacing: -0.025em;
-    }
-    .hover-lift {
-      transition: transform 0.35s ease-out;
-    }
-    .hover-lift:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    }
-  </style>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="bg-white py-4 sticky top-0 z-50 shadow-sm">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <a href="#" class="text-xl md:text-2xl font-serif">Villa Magellano</a>
-      <!-- Hamburger Button -->
-      <button id="menu-toggle" class="md:hidden focus:outline-none">
-        <svg class="w-6 h-6 text-trulli-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-      <!-- Navigation Links -->
-      <div id="menu" class="hidden md:flex md:space-x-6 absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent px-4 md:px-0 py-4 md:py-0 flex-col md:flex-row items-center">
-        <a href="about.html" class="text-trulli-900 hover:text-trulli-500 py-2 md:py-0">About us</a>
-        <a href="rooms.html" class="text-trulli-900 hover:text-trulli-500 py-2 md:py-0">Rooms</a>
-        <a href="booking.html" class="text-trulli-900 hover:text-trulli-500 py-2 md:py-0">Book Now</a>
-        <a href="area.html" class="text-trulli-900 hover:text-trulli-500 py-2 md:py-0">Area</a>
-        <a href="index_it.html" id="lang-switch" class="py-2 md:py-0">
-          <img src="static/ita_logo.png" alt="ITA Flag" class="w-4 h-4">
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giulia Bellini - Nutrizionista</title>
+    <meta name="description" content="Consulenza nutrizionale personalizzata per il tuo benessere" />
+    <meta name="author" content="Giulia Bellini" />
+
+    <meta property="og:title" content="Giulia Bellini - Nutrizionista" />
+    <meta property="og:description" content="Consulenza nutrizionale personalizzata per il tuo benessere" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@giuliabellini" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" class="logo">Giulia Bellini</a>
+
+        <!-- Desktop Menu -->
+        <div class="desktop-menu">
+          <a href="#home">Home</a>
+          <a href="#about">Chi Sono</a>
+          <a href="#services">Servizi</a>
+          <a href="#testimonials">Testimonianze</a>
+          <a href="#contact">Contatti</a>
+          <button class="btn btn-primary">Prenota ora</button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-button">
+          <button class="btn-menu" onclick="toggleMobileMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-container">
+          <a href="#home" onclick="closeMobileMenu()">Home</a>
+          <a href="#about" onclick="closeMobileMenu()">Chi Sono</a>
+          <a href="#services" onclick="closeMobileMenu()">Servizi</a>
+          <a href="#testimonials" onclick="closeMobileMenu()">Testimonianze</a>
+          <a href="#contact" onclick="closeMobileMenu()">Contatti</a>
+          <button class="btn btn-primary btn-full">Prenota ora</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-image">
+        <div class="hero-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2853&q=80" alt="Nutrizione sana">
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text animate-fade-in">
+          <h1>Nutrizione personalizzata per il tuo benessere</h1>
+          <p>Ciao, sono Giulia Bellini, Biologa Nutrizionista. Ti aiuto a raggiungere i tuoi obiettivi di salute attraverso un'alimentazione equilibrata e su misura per te.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">Prenota una consulenza</button>
+            <button class="btn btn-outline">
+              Scopri di più 
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
         </a>
       </div>
-    </div>
-  </nav>
+    </section>
 
-  <!-- Hero -->
-  <header class="relative h-[70vh] md:h-screen">
-    <div class="absolute inset-0">
-      <img src="static/11.jpg" alt="Lake view" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    </div>
-    <div class="relative h-full flex items-center">
-      <div class="container mx-auto px-4 py-10 md:py-20 text-center md:text-left">
-        <div class="max-w-3xl mx-auto md:mx-0">
-          <h1 class="text-3xl md:text-4xl lg:text-6xl text-white font-serif mb-6 leading-tight">
-            Experience the authentic Garda Lake
-          </h1>
-          <p class="text-lg md:text-xl text-white text-opacity-90 mb-8">
-            Modern comfort meets traditional charm in our luxurious villa
+    <!-- About Section -->
+    <section id="about" class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2>Chi Sono</h2>
+          <div class="section-divider"></div>
+          <p>Professionista della nutrizione con esperienza pluriennale nel settore del benessere e dell'alimentazione</p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-image">
+            <div class="about-image-bg"></div>
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Giulia Bellini">
+          </div>
+
+          <div class="about-text">
+            <h3>Dott.ssa Giulia Bellini</h3>
+            <p>Mi sono laureata in Scienze Biologiche presso l'Università degli Studi di Milano e ho conseguito una specializzazione in Nutrizione Umana. Da oltre 10 anni lavoro come nutrizionista, aiutando centinaia di persone a migliorare la propria alimentazione e qualità di vita.</p>
+            <p>Il mio approccio è basato sull'ascolto e sulla personalizzazione: ogni persona ha esigenze diverse e merita un piano nutrizionale su misura. Non credo nelle diete estreme o nei regimi restrittivi, ma in un'alimentazione equilibrata che possa diventare uno stile di vita duraturo.</p>
+
+            <div class="stats-grid">
+              <div class="stat-card">
+                <h4>10+</h4>
+                <p>Anni di esperienza</p>
+              </div>
+              <div class="stat-card">
+                <h4>500+</h4>
+                <p>Clienti soddisfatti</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>I Miei Servizi</h2>
+          <div class="section-divider"></div>
+          <p>Offro consulenze nutrizionali personalizzate per aiutarti a raggiungere i tuoi obiettivi di salute</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🍎</div>
+            <h3>Prima Visita</h3>
+            <p class="service-duration">Durata: 60 minuti</p>
+            <p class="service-description">Valutazione completa dello stato nutrizionale e delle abitudini alimentari. Definizione degli obiettivi e creazione del piano personalizzato.</p>
+            <div class="service-footer">
+              <p class="service-price">120€</p>
+              <button class="btn-link">Prenota <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Visita di Controllo</h3>
+            <p class="service-duration">Durata: 45 minuti</p>
+            <p class="service-description">Monitoraggio dei progressi, analisi delle difficoltà e adeguamento del piano nutrizionale in base ai risultati raggiunti.</p>
+            <div class="service-footer">
+              <p class="service-price">80€</p>
+              <button class="btn-link">Prenota <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+          </div>
+
+          <div class="service-card featured">
+            <div class="service-icon">📆</div>
+            <h3>Pacchetto Trimestrale</h3>
+            <p class="service-duration">Durata: 3 mesi</p>
+            <p class="service-description">Prima visita + 3 visite di controllo mensili. Supporto continuo e monitoraggio costante per garantire i migliori risultati.</p>
+            <div class="service-footer">
+              <p class="service-price">330€</p>
+              <button class="btn-link">Prenota <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Consulenza Online</h3>
+            <p class="service-duration">Durata: 60 minuti</p>
+            <p class="service-description">Visita nutrizionale completa via videochiamata, con successivo invio del piano alimentare personalizzato via email.</p>
+            <div class="service-footer">
+              <p class="service-price">100€</p>
+              <button class="btn-link">Prenota <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2>Testimonianze</h2>
+          <div class="section-divider"></div>
+          <p>Scopri cosa dicono i miei clienti delle consulenze nutrizionali</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1061&q=80" alt="Laura B.">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Giulia è stata fondamentale nel mio percorso verso una alimentazione più sana. Con il suo aiuto ho perso 10 kg in 6 mesi, ma soprattutto ho imparato a mangiare in modo equilibrato senza rinunce eccessive.</p>
+            <div class="testimonial-author">
+              <h4>Laura B.</h4>
+              <p>Professionista, 35 anni</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Marco T.">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Ho consultato Giulia per migliorare le mie performance sportive. Il piano nutrizionale che mi ha fornito è stato perfetto: ho aumentato la massa muscolare e l'energia durante gli allenamenti.</p>
+            <div class="testimonial-author">
+              <h4>Marco T.</h4>
+              <p>Sportivo, 28 anni</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80" alt="Sofia M.">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Dopo la gravidanza, Giulia mi ha aiutato a ritrovare il mio peso forma senza stress. Apprezzo particolarmente la sua disponibilità tra una visita e l'altra per risolvere ogni dubbio.</p>
+            <div class="testimonial-author">
+              <h4>Sofia M.</h4>
+              <p>Mamma, 42 anni</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Seguimi su Instagram</h2>
+          <div class="section-divider"></div>
+          <p>
+            <a href="https://instagram.com/giuliabellini_nutrizionista" target="_blank" rel="noopener noreferrer">
+              @giuliabellini_nutrizionista
+            </a>
           </p>
-          <a href="booking.html" class="inline-block py-3 px-6 bg-white text-trulli-900 font-medium hover:bg-opacity-90 transition-colors">
-            Book Your Stay
-          </a>
         </div>
-      </div>
-    </div>
-  </header>
 
-  <!-- Introduction -->
-  <section id="about" class="py-16 md:py-28">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <span class="inline-block px-3 py-1 text-xs tracking-wider uppercase bg-trulli-200 text-trulli-500 mb-6">Welcome</span>
-        <h2 class="text-2xl md:text-4xl font-serif mb-6 leading-tight">
-          Comfort, tranquility and nature
-        </h2>
-        <p class="text-base md:text-lg text-trulli-500 mb-8 leading-relaxed">
-          Nestled by Garda Lake, our restored villa offers a blend of authentic architecture and modern comfort for your Italian escape.
-        </p>
-        <a href="about.html" class="inline-flex items-center text-trulli-900 hover:text-trulli-500 transition-colors duration-250">
-          <span class="mr-2 font-medium">Discover our story</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section class="py-16 md:py-28">
-    <div class="container mx-auto px-4">
-      <div class="space-y-16 md:space-y-32">
-        <!-- Feature 1 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 items-center">
-          <div class="h-full overflow-hidden">
-            <div class="aspect-[4/3] w-full overflow-hidden">
-              <img src="static/airbnb17.jpg" alt="Authentic Experience" class="object-cover w-full h-full hover-lift transform transition-transform duration-[1.8s] hover:scale-105" />
+        <div class="instagram-grid">
+          <div class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Instagram post">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <div>
+                  <span>❤️</span>
+                  <span>124</span>
+                </div>
+                <div>
+                  <span>💬</span>
+                  <span>8</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col justify-center">
-            <h2 class="text-2xl md:text-4xl font-serif mb-4"> Italian Traditional Villa</h2>
-            <p class="text-trulli-500 text-base md:text-lg leading-relaxed">
-              Restored with care, our villa preserves its charm while offering modern amenities.
-            </p>
+          <div class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80" alt="Instagram post">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <div>
+                  <span>❤️</span>
+                  <span>97</span>
+                </div>
+                <div>
+                  <span>💬</span>
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Feature 2 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 items-center">
-          <div class="flex flex-col justify-center">
-            <h2 class="text-2xl md:text-4xl font-serif mb-4">Immersed in Nature</h2>
-            <p class="text-trulli-500 text-base md:text-lg leading-relaxed">
-              Surrounded by a beautiful garden, enjoy a serene retreat.
-            </p>
+          <div class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Instagram post">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <div>
+                  <span>❤️</span>
+                  <span>215</span>
+                </div>
+                <div>
+                  <span>💬</span>
+                  <span>12</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="h-full overflow-hidden">
-            <div class="aspect-[4/3] w-full overflow-hidden">
-              <img src="static/view_pano.jpg" alt="Nature" class="object-cover w-full h-full hover-lift transform transition-transform duration-[1.8s] hover:scale-105" />
+          <div class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Instagram post">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <div>
+                  <span>❤️</span>
+                  <span>132</span>
+                </div>
+                <div>
+                  <span>💬</span>
+                  <span>7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Instagram post">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <div>
+                  <span>❤️</span>
+                  <span>182</span>
+                </div>
+                <div>
+                  <span>💬</span>
+                  <span>9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Instagram post">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <div>
+                  <span>❤️</span>
+                  <span>167</span>
+                </div>
+                <div>
+                  <span>💬</span>
+                  <span>11</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Gallery -->
-  <section id="gallery" class="py-16 md:py-28 bg-trulli-100">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-12">
-        <h2 class="text-2xl md:text-4xl font-serif mb-4">Glimpses of Your Stay</h2>
-        <p class="text-trulli-500 text-base md:text-lg max-w-2xl mx-auto">
-          Discover the beauty and comfort of our italian villa.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="overflow-hidden"><img src="static/airbnb3.jpg" alt="Interior" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
-        <div class="overflow-hidden"><img src="static/airbnb4.jpg" alt="Exterior" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
-        <div class="overflow-hidden"><img src="static/airbnb5.jpg" alt="Pool" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
-        <div class="overflow-hidden"><img src="static/airbnb7.jpg" alt="Dining" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
-        <div class="overflow-hidden"><img src="static/airbnb9.jpg" alt="Bedroom" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
-        <div class="overflow-hidden"><img src="static/airbnb10.jpg" alt="Garden" class="w-full h-48 md:h-64 object-cover hover-lift transition-transform duration-[1.8s] hover:scale-105" /></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="book-now" class="py-16 md:py-28 relative">
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1606046604972-77cc76aee944?q=80&w=2832&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
-    <div class="absolute inset-0 bg-trulli-900/70"></div>
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="max-w-3xl mx-auto text-center text-white">
-        <h2 class="text-2xl md:text-4xl font-serif mb-6">Begin Your Garda Experience</h2>
-        <p class="text-white/80 text-base md:text-lg mb-8">Reserve your stay and dive into the culture and landscapes of Garda Lake.</p>
-        <a href="booking.html" class="inline-block py-3 px-6 bg-white text-trulli-900 font-medium hover:bg-white/90 transition-colors">Book Your Stay</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="contact" class="bg-trulli-900 text-white">
-    <div class="container mx-auto px-4 py-10">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div>
-          <h3 class="text-xl md:text-2xl font-serif mb-4">Villa Magellano</h3>
-          <p class="text-white/70 text-sm md:text-base mb-6">Experience the magic of Garda Lake in our luxurious villa.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contattami</h2>
+          <div class="section-divider"></div>
+          <p>Prenota una consulenza o richiedi informazioni sui miei servizi</p>
         </div>
-        <div>
-          <h4 class="text-base md:text-lg font-medium mb-4">Contact</h4>
-          <address class="text-white/70 text-sm md:text-base not-italic">
-            <p class="mb-2">Via Magellano, 26</p>
-            <p class="mb-2">Castelnuovo del Garda, Verona, Italy</p>
-            <p class="mb-2">+39 3518401998</p>
-            <p>magellanosuite@gmail.com</p>
-          </address>
-        </div>
-        <div>
-          <h4 class="text-base md:text-lg font-medium mb-4">Links</h4>
-          <ul class="space-y-2 text-white/70 text-sm md:text-base">
-            <li><a href="about.html" class="hover:text-white transition-colors">About us</a></li>
-            <li><a href="rooms.html" class="hover:text-white transition-colors">Rooms</a></li>
-            <li><a href="booking.html" class="hover:text-white transition-colors">Book Now</a></li>
-            <li><a href="area.html" class="hover:text-white transition-colors">Area</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="border-t border-white/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-white/70 text-sm">© 2025 Villa Magellano. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
 
-  <!-- JavaScript for Hamburger Menu -->
-  <script>
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-      document.getElementById('menu').classList.toggle('hidden');
-    });
-  </script>
-  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-</body>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Informazioni di contatto</h3>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <h4>Telefono</h4>
+                  <p>+39 123 456 7890</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>info@giuliabellininutrizionista.it</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <h4>Studio</h4>
+                  <p>
+                    Via Roma 123<br>
+                    20100 Milano, Italia
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="opening-hours">
+              <h4>Orari di apertura</h4>
+              <div class="hours-item">
+                <span>Lunedì - Venerdì</span>
+                <span>9:00 - 19:00</span>
+              </div>
+              <div class="hours-item">
+                <span>Sabato</span>
+                <span>10:00 - 14:00</span>
+              </div>
+              <div class="hours-item">
+                <span>Domenica</span>
+                <span>Chiuso</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <h3>Inviami un messaggio</h3>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="La tua email" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Telefono</label>
+                <input type="tel" id="phone" name="phone" placeholder="Il tuo numero di telefono" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Messaggio</label>
+                <textarea id="message" name="message" placeholder="Scrivi qui il tuo messaggio..." rows="4" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-full">Invia messaggio</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>Giulia Bellini</h3>
+            <p>
+              Biologa Nutrizionista specializzata in educazione alimentare e piani nutrizionali personalizzati per il benessere.
+            </p>
+            <div class="social-icons">
+              <a href="https://instagram.com/giuliabellini_nutrizionista" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="https://facebook.com/giuliabellininutrizionista" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/giuliabellini" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Link utili</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Chi sono</a></li>
+              <li><a href="#services">Servizi</a></li>
+              <li><a href="#testimonials">Testimonianze</a></li>
+              <li><a href="#contact">Contatti</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Contatti</h4>
+            <ul class="footer-contacts">
+              <li>
+                <strong>Indirizzo:</strong> Via Roma 123, 20100 Milano, Italia
+              </li>
+              <li>
+                <strong>Telefono:</strong> +39 123 456 7890
+              </li>
+              <li>
+                <strong>Email:</strong> info@giuliabellininutrizionista.it
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>
+            © <span id="currentYear">2023</span> Giulia Bellini Nutrizionista. Tutti i diritti riservati.
+          </p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Termini e Condizioni</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+  </body>
 </html>
